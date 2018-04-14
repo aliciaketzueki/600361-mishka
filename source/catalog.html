@@ -21,8 +21,8 @@
             <a class="menu__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="menu__item">
-            <input type="search" class="menu__link" placeholder="Поиск по сайту">
-            <button type="button" class="button menu__search">Поиск</button>
+            <input class="menu__link" type="search" placeholder="Поиск по сайту">
+            <button class="button menu__search" type="button">Поиск</button>
           </li>
           <li class="menu__item">
             <button class="button menu__link">
@@ -38,42 +38,42 @@
         <h1 class="catalog__title main-title">Каталог товаров</h1>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a href="#" class="catalog__item-link link-wrapper">
+            <a class="catalog__item-link link-wrapper" href="#">
               <img src="#" alt="Зайчик-попрыгайчик">
               <h2 class="catalog__name">Зайчик-попрыгайчик</h2>
             </a>
             <p class="catalog__description">Рост 30 см, вес 200 г</p>
             <p class="catalog__cost">1200 руб.</p>
-            <button type="button" class="catalog__button">Корзина</button>
+            <button class="catalog__button" type="button">Корзина</button>
           </li>
           <li class="catalog__item">
-            <a href="#" class="catalog__item-link link-wrapper">
+            <a class="catalog__item-link link-wrapper" href="#">
               <img src="#" alt="Корзинка для белья">
               <h2 class="catalog__name">Корзинка для белья</h2>
             </a>
             <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
             <p class="catalog__cost">690 руб.</p>
-            <button type="button" class="catalog__button">Корзина</button>
+            <button class="catalog__button" type="button">Корзина</button>
           </li>
           <li class="catalog__item">
-            <a href="#" class="catalog__item-link link-wrapper">
+            <a class="catalog__item-link link-wrapper" href="#">
               <img src="#" alt="Большая корзинка для игрушек">
               <h2 class="catalog__name">Большая корзинка для игрушек</h2>
             </a>
             <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
             <p class="catalog__cost">1500 руб.</p>
-            <button type="button" class="catalog__button">Корзина</button>
+            <button class="catalog__button" type="button">Корзина</button>
           </li>
         </ul>
       </section>
       <section class="main__making making">
-        <a href="#" class="main__making-link link-wrapper">
+        <a class="main__making-link link-wrapper" href="#">
           <h1 class="making__title">Процесс производства</h1>
-          <video src="#" class="making__video"></video>
+          <video class="making__video" src="#"></video>
         </a>
-        <button type="button" class="making__video-button">Play</button>
+        <button class="making__video-button" type="button">Play</button>
         <p class="making__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button type="button" class="button making__button">Сделать заказ</button>
+        <button class="button making__button" type="button">Сделать заказ</button>
       </section>
     </main>
     <footer class="footer">
@@ -81,44 +81,44 @@
         <h1 class="visually-hidden">Мы в соц.сетях</h1>
         <ul class="footer__social social">
           <li class="social__item">
-            <a href="#" class="social__link">Instagram</a>
+            <a class="social__link" href="#">Instagram</a>
           </li>
           <li class="social-item">
-            <a href="#" class="social__link">Facebook</a>
+            <a class="social__link" href="#">Facebook</a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link">Twitter</a>
+            <a class="social__link" href="#">Twitter</a>
           </li>
         </ul>
       </section>
       <div class="footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-          <img src="#" alt="HTML Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo" src="#" alt="HTML Academy">
         </a>
       </div>
     </footer>
 
     <section class="modal">
       <h1 class="modal__title">Добавить в корзину</h1>
-      <form action="https://echo.htmlacademy.ru/" method="post" class="modal__form">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="modal__form-field">
           <legend class="modal__legend">Выберите размер:</legend>
           <ul class="modal__list">
             <li class="modal__item">
-              <input type="radio" name="size" id="first-size" value="S-size" class="modal__input" checked>
-              <label for="first-size" class="modal__label">S</label>
+              <input class="modal__input" type="radio" name="size" id="first-size" value="S-size" checked>
+              <label class="modal__label" for="first-size">S</label>
             </li>
             <li class="modal__item">
-              <input type="radio" name="size" id="second-size" value="M-size" class="modal__input">
-              <label for="second-size" class="modal__label">M</label>
+              <input class="modal__input" type="radio" name="size" id="second-size" value="M-size">
+              <label class="modal__label" for="second-size">M</label>
             </li>
             <li class="modal__item">
-              <input type="radio" name="size" id="third-size" value="L-size" class="modal__input">
-              <label for="third-size" class="modal__label">L</label>
+              <input class="modal__input" type="radio" name="size" id="third-size" value="L-size">
+              <label class="modal__label" for="third-size">L</label>
             </li>
           </ul>
-          <button type="submit" class="button modal__button">Добавить</button>
+          <button class="button modal__button" type="submit">Добавить</button>
         </fieldset>
       </form>
     </section>

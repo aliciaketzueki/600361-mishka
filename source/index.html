@@ -21,8 +21,8 @@
             <a class="menu__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="menu__item">
-            <input type="search" class="menu__link" placeholder="Поиск по сайту">
-            <button type="button" class="button menu__search">Поиск</button>
+            <input class="menu__link" type="search" placeholder="Поиск по сайту">
+            <button class="button menu__search" type="button">Поиск</button>
           </li>
           <li class="menu__item">
             <button class="button menu__link">
@@ -37,8 +37,8 @@
     <main class="main">
       <header class="main__slogan slogan">
         <h1 class="slogan__title">Милые штуки ручной работы для дома</h1>
-        <a href="#" class="slogan__link slogan__link--active">Предметы интерьера</a>
-        <a href="#" class="slogan__link">Детские игрушки</a>
+        <a class="slogan__link slogan__link--active" href="#">Предметы интерьера</a>
+        <a class="slogan__link" href="#">Детские игрушки</a>
       </header>
       <section class="main__week-product week-product">
         <h1 class="week-product__name">Вязаные корзинки</h1>
@@ -60,7 +60,7 @@
         </table>
         <img src="#" alt="Вязаные корзинки">
         <p class="week-product__cost">Цена: 990 руб.</p>
-        <button type="button" class="button week-product__button">Заказать</button>
+        <button class="button week-product__button" type="button">Заказать</button>
       </section>
       <section class="main__about-us about-us">
         <h1 class="about-us__title">Коротко о нас:</h1>
@@ -94,16 +94,16 @@
             <p class="reviews__contact">@misssssiskras</p>
           </li>
         </ul>
-        <button type="button" class="reviews__slider reviews__slider--left">1</button>
-        <button type="button" class="reviews__slider reviews__slider--right">2</button>
-        <a href="#" class="button reviews__button">Написать</a>
+        <button class="reviews__slider reviews__slider--left" type="button">1</button>
+        <button class="reviews__slider reviews__slider--right" type="button">2</button>
+        <a class="button reviews__button" href="#">Написать</a>
       </section>
       <section class="main__contacts contacts">
         <h1 class="contacts__title">Контакты</h1>
         <table class="contacts__table">
           <tr>
             <td class="contacts__property">E-mail:</td>
-            <td class="contacts__value"><a href="#" class="contacts__email-link">info@mimimishkashop.ru</a></td>
+            <td class="contacts__value"><a class="contacts__email-link" href="#">info@mimimishkashop.ru</a></td>
           </tr>
           <tr>
             <td class="contacts__property">Адрес:</td>
@@ -113,7 +113,7 @@
         <div class="contacts__map-wrapper">
           <img class="contacts__map" src="#" alt="Карта">
         </div>
-        <a href="#" class="button contacts__button">Напишите нам</a>
+        <a class="button contacts__button" href="#">Напишите нам</a>
       </section>
     </main>
 
@@ -122,44 +122,44 @@
         <h1 class="visually-hidden">Мы в соц.сетях</h1>
         <ul class="footer__social social">
           <li class="social__item">
-            <a href="#" class="social__link" aria-label="Перейти на аккаунт Instagram">Instagram</a>
+            <a class="social__link" href="#">Instagram</a>
           </li>
           <li class="social-item">
-            <a href="#" class="social__link" aria-label="Перейти на аккаунт Facebook">Facebook</a>
+            <a class="social__link" href="#">Facebook</a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link" aria-label="Перейти на аккаунт Twitter">Twitter</a>
+            <a class="social__link" href="#">Twitter</a>
           </li>
         </ul>
       </section>
       <div class="footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-          <img src="#" alt="HTML Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo" src="#" alt="HTML Academy">
         </a>
       </div>
     </footer>
 
     <section class="modal">
       <h1 class="modal__title">Добавить в корзину</h1>
-      <form action="https://echo.htmlacademy.ru/" method="post" class="modal__form">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="modal__form-field">
           <legend class="modal__legend">Выберите размер:</legend>
           <ul class="modal__list">
             <li class="modal__item">
-              <input type="radio" name="size" id="first-size" value="S-size" class="modal__input" checked>
-              <label for="first-size" class="modal__label">S</label>
+              <input class="modal__input" type="radio" name="size" id="first-size" value="S-size" checked>
+              <label class="modal__label" for="first-size">S</label>
             </li>
             <li class="modal__item">
-              <input type="radio" name="size" id="second-size" value="M-size" class="modal__input">
-              <label for="second-size" class="modal__label">M</label>
+              <input class="modal__input" type="radio" name="size" id="second-size" value="M-size">
+              <label class="modal__label" for="second-size">M</label>
             </li>
             <li class="modal__item">
-              <input type="radio" name="size" id="third-size" value="L-size" class="modal__input">
-              <label for="third-size" class="modal__label">L</label>
+              <input class="modal__input" type="radio" name="size" id="third-size" value="L-size">
+              <label class="modal__label" for="third-size">L</label>
             </li>
           </ul>
-          <button type="submit" class="button modal__button">Добавить</button>
+          <button class="button modal__button" type="submit">Добавить</button>
         </fieldset>
       </form>
     </section>

@@ -21,8 +21,8 @@
             <a class="menu__link" href="#">Вязание на заказ</a>
           </li>
           <li class="menu__item">
-            <input type="search" class="menu__link" placeholder="Поиск по сайту">
-            <button type="button" class="button menu__search">Поиск</button>
+            <input class="menu__link" type="search" placeholder="Поиск по сайту">
+            <button class="button menu__search" type="button">Поиск</button>
           </li>
           <li class="menu__item">
             <button class="button menu__link">
@@ -38,17 +38,17 @@
         <h1 class="search__head main-title">Вязание на заказ</h1>
         <p class="search__neck">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </header>
-      <form action="https://echo.htmlacademy.ru/" method="post" class="main__order-form order-form">
+      <form class="main__order-form order-form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="order-form__parameter">
           <legend class="order-form__legend">Тип</legend>
           <ul class="order-form__list">
             <li class="order-form__item">
-              <input type="radio" name="type" id="accessory" value="accessory for interior" class="order-form__radio" checked>
+              <input class="order-form__radio" type="radio" name="type" id="accessory" value="accessory for interior" checked>
               <label for="accessory" class="order-form__label">Аксессуар для интерьера</label>
             </li>
             <li class="order-form__item">
-              <input type="radio" name="type" id="toy" value="children's toy" class="order-form__radio">
-              <label for="toy" class="order-form__label">Детская игрушка</label>
+              <input class="order-form__radio" type="radio" name="type" id="toy" value="children's toy">
+              <label class="order-form__label" for="toy">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
@@ -56,28 +56,28 @@
           <legend class="order-form__parameter">Цвет</legend>
           <ul class="order-form__list">
             <li class="order-form__item">
-              <input type="checkbox" class="order-form__checkbox" id="white" name="color-white" checked>
-              <label for="white" class="order-form__label">Белый</label>
+              <input class="order-form__checkbox" type="checkbox" id="white" name="color-white" checked>
+              <label class="order-form__label" for="white">Белый</label>
             </li>
             <li class="order-form__item">
-              <input type="checkbox" class="order-form__checkbox" id="grey" name="color-grey" checked>
-              <label for="grey" class="order-form__label">Серый</label>
+              <input class="order-form__checkbox" type="checkbox" id="grey" name="color-grey" checked>
+              <label class="order-form__label" for="grey">Серый</label>
             </li>
             <li class="order-form__item">
-              <input type="checkbox" class="order-form__checkbox" id="tiffany" name="color-tiffany">
-              <label for="tiffany" class="order-form__label">"Тиффани"</label>
+              <input class="order-form__checkbox" type="checkbox" id="tiffany" name="color-tiffany">
+              <label class="order-form__label" for="tiffany">"Тиффани"</label>
             </li>
             <li class="order-form__item">
-              <input type="checkbox" class="order-form__checkbox" id="black" name="color-black">
-              <label for="black" class="order-form__label">Черный</label>
+              <input class="order-form__checkbox" type="checkbox" id="black" name="color-black">
+              <label class="order-form__label" for="black">Черный</label>
             </li>
             <li class="order-form__item">
-              <input type="checkbox" class="order-form__checkbox" id="pink" name="color-pink">
-              <label for="pink" class="order-form__label">Розовый</label>
+              <input class="order-form__checkbox" type="checkbox" id="pink" name="color-pink">
+              <label class="order-form__label" for="pink">Розовый</label>
             </li>
             <li class="order-form__item">
-              <input type="checkbox" class="order-form__checkbox" id="orange" name="color-orange">
-              <label for="orange" class="order-form__label">Оранжевый</label>
+              <input class="order-form__checkbox" type="checkbox" id="orange" name="color-orange">
+              <label class="order-form__label" for="orange">Оранжевый</label>
             </li>
           </ul>
         </fieldset>
@@ -85,33 +85,33 @@
           <legend class="order-form__legend">ФИО</legend>
           <ul class="order-form__list">
             <li class="order-form__item">
-              <label for="name" class="order-form__label">Имя:</label>
-              <input type="text" class="order-form__input" id="name" placeholder="Введите ваше имя*" name="name" required>
+              <label class="order-form__label" for="name">Имя:</label>
+              <input class="order-form__input" type="text" id="name" placeholder="Введите ваше имя*" name="name" required>
             </li>
             <li class="order-form__item">
-              <label for="surname" class="order-form__label">Фамилия:</label>
-              <input type="text" class="order-form__input" id="surname" placeholder="Укажите фамилию*" name="surname" required>
+              <label class="order-form__label" for="surname">Фамилия:</label>
+              <input class="order-form__input" type="text" id="surname" placeholder="Укажите фамилию*" name="surname" required>
             </li>
             <li class="order-form__item">
-              <label for="patronymic" class="order-form__label">Отчество:</label>
-              <input type="text" class="order-form__input" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
+              <label class="order-form__label" for="patronymic">Отчество:</label>
+              <input class="order-form__input" type="text" id="patronymic" name="patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
         </fieldset>
         <fieldset class="order-form__parameter">
           <legend class="order-form__legend">Тел</legend>
-          <input type="tel" class="order-form__input order-form__input--tel" placeholder="+7 ХХХ ХХ ХХ*" name="tel" required>
+          <input class="order-form__input order-form__input--tel" type="tel" placeholder="+7 ХХХ ХХ ХХ*" name="tel" required>
         </fieldset>
         <fieldset class="order-form__parameter">
           <legend class="order-form__legend">E-mail</legend>
-          <input type="email" class="order-form__input order-form__input--email" placeholder="Ваш Email*" name="email" required>
+          <input class="order-form__input order-form__input--email" type="email" placeholder="Ваш Email*" name="email" required>
         </fieldset>
         <fieldset class="order-form__parameter">
           <legend class="order-form__legend">Доп</legend>
           <textarea class="order-form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <p class="order-form__tag">*Поля обязательны для заполнения</p>
-        <button type="submit" class="button order-form__button">Отправить заказ</button>
+        <button class="button order-form__button" type="submit">Отправить заказ</button>
       </form>
     </main>
     <footer class="footer">
@@ -119,20 +119,20 @@
         <h1 class="visually-hidden">Мы в соц.сетях</h1>
         <ul class="footer__social social">
           <li class="social__item">
-            <a href="#" class="social__link">Instagram</a>
+            <a class="social__link" href="#">Instagram</a>
           </li>
           <li class="social-item">
-            <a href="#" class="social__link">Facebook</a>
+            <a class="social__link" href="#">Facebook</a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link">Twitter</a>
+            <a class="social__link" href="#">Twitter</a>
           </li>
         </ul>
       </section>
       <div class="footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-          <img src="#" alt="HTML Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__logo" src="#" alt="HTML Academy">
         </a>
       </div>
     </footer>
