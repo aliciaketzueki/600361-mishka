@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <a class="header__logo" href="index.html">
-        <img class="logo header__logo-img" src="#" alt="Логотип сайта">
+        <img class="logo header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
       </a>
       <button class="header__button" type="button">Открыть меню</button>
       <nav class="header__navigation">
@@ -29,6 +29,7 @@
         </ul>
       </nav>
     </header>
+
     <main class="main">
       <header class="main__order order">
         <div class="page-title">
@@ -42,7 +43,7 @@
           <ul class="order-form__list">
             <li class="order-form__item">
               <input class="order-form__radio" type="radio" name="type" id="accessory" value="accessory for interior" checked>
-              <label for="accessory" class="order-form__label">Аксессуар для интерьера</label>
+              <label class="order-form__label" for="accessory">Аксессуар для интерьера</label>
             </li>
             <li class="order-form__item">
               <input class="order-form__radio" type="radio" name="type" id="toy" value="children's toy">
@@ -112,6 +113,7 @@
         <button class="button order-form__button" type="submit">Отправить заказ</button>
       </form>
     </main>
+
     <footer class="footer">
       <section class="footer__contacts">
         <h1 class="visually-hidden">Мы в соц.сетях</h1>

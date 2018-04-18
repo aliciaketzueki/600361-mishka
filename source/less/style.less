@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fontsopensansbold.woff2") format("woff2");
+}
+
+@import url("variables.less");
+@import url("mixins.less");
+/*===================================
+index.html
+===================================*/
+@import url("blocks/header.less");
+@import url("blocks/menu.less");
+@import url("blocks/slogan.less");
+@import url("blocks/week-product.less");
+@import url("blocks/about-us.less");
+@import url("blocks/reviews.less");
+@import url("blocks/contacts.less");
+@import url("blocks/social.less");
+@import url("blocks/copyright.less");
+@import url("blocks/modal.less");
+
+/*===================================
+catalog.html
+===================================*/
+@import url("blocks/catalog.less");
+@import url("blocks/making.less");
+
+/*===================================
+form.html
+===================================*/
+@import url("blocks/order.less");
+@import url("blocks/order-form.less");
+
+/*===================================*/
+
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  background-color: @white;
+}
+
+.page-title {
+  background-color: @light-grey;
+  &--home {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  height: 373px;
+  background-color: #f9f9f9;
+  }
+}
+
+.button {
+  font: inherit;
+  text-transform: inherit;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
