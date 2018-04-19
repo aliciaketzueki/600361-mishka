@@ -8,11 +8,16 @@
 
 @import url("variables.less");
 @import url("mixins.less");
+
+@import url("global.less");
+@import url("blocks/visually-hidden.less");
+@import url("blocks/button.less");
 /*===================================
 index.html
 ===================================*/
 @import url("blocks/header.less");
 @import url("blocks/menu.less");
+@import url("blocks/main.less");
 @import url("blocks/slogan.less");
 @import url("blocks/week-product.less");
 @import url("blocks/about-us.less");
@@ -37,39 +42,3 @@ form.html
 /*===================================*/
 
 
-body {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
-  background-color: @white;
-}
-
-.page-title {
-  background-color: @light-grey;
-  &--home {
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  height: 373px;
-  background-color: #f9f9f9;
-  }
-}
-
-.button {
-  font: inherit;
-  text-transform: inherit;
-  text-align: center;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
