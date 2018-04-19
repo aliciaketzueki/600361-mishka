@@ -1,0 +1,67 @@
+.order-form {
+  margin-top: 52px;
+}
+
+.order-form__parameter {
+  border: 0;
+  padding: 0;
+  margin-bottom: 34px;
+}
+
+.order-form__legend {
+  color: @blue;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.order-form__list {
+  .list();
+}
+
+.order-form__item {
+  line-height: 18px;
+  margin-top: 25px;
+}
+/*
+.order-form__radio {
+
+}
+
+.order-form__label {
+
+}
+
+.order-form__checkbox {
+
+}
+*/
+.order-form__input {
+  border: 0;
+  border-bottom: 2px solid @black;
+  width: 100%;
+
+  &:hover,
+  &:active {
+    border-bottom: 2px solid @blue;
+  }
+}
+
+.order-form__textarea {
+  border: 2px solid @grey;
+
+  &:hover,
+  &:active {
+    border: 2px solid @blue;
+  }
+}
+
+.order-form__tag {
+  color: @grey;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.order-form__button {
+  .main-button();
+}

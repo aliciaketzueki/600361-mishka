@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <a class="header__logo">
-        <img class="logo header__logo-img" src="#" alt="Логотип сайта">
+        <img class="logo header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
       </a>
       <button class="header__button" type="button">Открыть меню</button>
       <nav class="header__navigation">
@@ -32,7 +32,7 @@
 
     <main class="main">
       <header class="main__slogan slogan">
-        <div class="page-title page-title--home">
+        <div class="page-title main__page-title--home">
           <h1 class="slogan__title">Милые штуки ручной<br> работы для дома</h1>
         </div>
         <ul class="slogan__list">
@@ -49,42 +49,42 @@
         <p class="week-product__label">Товар недели</p>
         <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="week-product__properties">
-          <tr>
+          <tr class="week-product__stroke">
             <td class="week-product__property">Цвет:</td>
             <td class="week-product__value">«Тиффани»/серый</td>
           </tr>
-          <tr>
+          <tr class="week-product__stroke">
             <td class="week-product__property">Диаметр:</td>
             <td class="week-product__value">25 см</td>
           </tr>
-          <tr>
+          <tr class="week-product__stroke">
             <td class="week-product__property">Высота:</td>
             <td class="week-product__value">15 см</td>
           </tr>
         </table>
-        <img src="#" alt="Вязаные корзинки">
+        <img class="week-product__img" src="#" alt="Вязаные корзинки">
         <p class="week-product__cost">Цена: 990 руб.</p>
         <button class="button week-product__button" type="button">Заказать</button>
       </section>
       <section class="main__about-us about-us">
         <h1 class="about-us__title">Коротко о нас:</h1>
-        <ul class="about-us__advantages">
-          <li class="about-us__advantage about-us__advantage--ecology">
+        <ul class="about-us__list">
+          <li class="about-us__item about-us__item--ecology">
             Экологически чистые материалы
           </li>
-          <li class="about-us__advantage about-us__advantage--style">
+          <li class="about-us__item about-us__item--style">
             Скандинавский стиль по российской цене
           </li>
-          <li class="about-us__advantage about-us__advantage--likes">
+          <li class="about-us__item about-us__item--likes">
             Увеличивает лайки на фотографиях
           </li>
-          <li class="about-us__advantage about-us__advantage--handmade">
+          <li class="about-us__item about-us__item--handmade">
             Связано вручную с любовью и умилением
           </li>
-          <li class="about-us__advantage about-us__advantage--domestic">
+          <li class="about-us__item about-us__item--domestic">
             Поддержка отечественного производителя
           </li>
-          <li class="about-us__advantage about-us__advantage--gift">
+          <li class="about-us__item about-us__item--gift">
             Поставляется в подарочной упаковке
           </li>
         </ul>
@@ -98,10 +98,10 @@
             <p class="reviews__contact">@misssssiskras</p>
           </li>
         </ul>
-        <p class="reviews__toggles slider__toggles">
+        <div class="reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--left" type="button"></button>
           <button class="slider__toggle slider__toggle--right" type="button"></button>
-        </p>
+        </div>
         <a class="button reviews__button" href="add-review.html">Написать</a>
       </section>
       <section class="main__contacts contacts">
@@ -117,8 +117,8 @@
           </tr>
         </table>
         <div class="contacts__map-wrapper">
-          <img class="contacts__map" src="#" alt="Карта">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616030944!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523776544922" width="600" height="450" style="border:0" allowfullscreen></iframe>
+          <img class="contacts__map" src="../../img/map-mobile@1x.jpg" alt="Карта">
+          <iframe class="contacts__map--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616030944!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523776544922" width="600" height="450" style="border:0" allowfullscreen></iframe>
         </div>
         <a class="button contacts__button" href="write-us.html">Напишите нам</a>
       </section>
@@ -131,7 +131,7 @@
           <li class="social__item">
             <a class="social__link" href="https://instagram.com" aria-label="Перейти на страницу instagram">Instagram</a>
           </li>
-          <li class="social-item">
+          <li class="social__item">
             <a class="social__link" href="https://facebook.com" aria-label="Перейти на страницу facebook">Facebook</a>
           </li>
           <li class="social__item">
