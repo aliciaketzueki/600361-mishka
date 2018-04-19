@@ -1,7 +1,15 @@
 .footer {
+  width: 320px;
+  margin: 0 auto;
   margin-top: 39px;
-  padding-left: 30px;
   background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__logo {
+  display: none;
 }
 
 .footer__contacts {
@@ -12,3 +20,24 @@
 
 }
 */
+@media (min-width: @tablet-width) {
+  .footer {
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    width: 1250px;
+    padding: 0 100px;
+  }
+
+  .footer__logo {
+    display: block;
+  }
+}
