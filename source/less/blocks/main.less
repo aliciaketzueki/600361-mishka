@@ -1,12 +1,9 @@
 .main {
+  outline: 2px solid red;
   width: 320px;
   margin: 0 auto;
 }
-/*
-.main__slogan {
 
-}
-*/
 .main__page-title {
   background-color: @light-grey;
   padding: 74px 0;
@@ -21,43 +18,23 @@
   }
 }
 
-.main__week-product {
-  padding-left: 30px;
-  border-bottom: 6px solid @light-grey;
+.main__wrapper {
+  margin-left: 30px;
+  outline: 2px solid blue;
 }
 
-.main__about-us {
-  padding-left: 30px;
-}
-
+.main__week-product,
 .main__reviews {
-  padding-left: 30px;
   border-bottom: 6px solid @light-grey;
-}
-
-.main__contacts {
-  padding-left: 30px;
-}
-/*
-.main__catalog {
-
-}
-
-.main__making {
-
-}
-
-.main__order {
-
-}
-*/
-.main__order-form {
-  padding-left: 30px;
 }
 
 @media (min-width: @tablet-width) {
   .main {
     width: 768px;
+  }
+
+  .main__wrapper {
+    margin-left: 50px;
   }
 }
 
@@ -67,23 +44,7 @@
     margin: 100px auto;
   }
 
-  .main__page-title {
-    padding-left: 175px;
-  }
-
-  .main__week-product {
-    padding-left: 175px;
-  }
-
-  .main__about-us {
-    padding-left: 175px;
-  }
-
-  .main__reviews {
-    padding-left: 175px;
-  }
-
-  .main__contacts {
-    padding-left: 175px;
+  .main__wrapper {
+    margin-left: 175px;
   }
 }
