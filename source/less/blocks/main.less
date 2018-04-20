@@ -1,8 +1,8 @@
-/*
 .main {
-
+  width: 320px;
+  margin: 0 auto;
 }
-
+/*
 .main__slogan {
 
 }
@@ -53,4 +53,37 @@
 */
 .main__order-form {
   padding-left: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .main {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main {
+    width: 1250px;
+    margin: 100px auto;
+  }
+
+  .main__page-title {
+    padding-left: 175px;
+  }
+
+  .main__week-product {
+    padding-left: 175px;
+  }
+
+  .main__about-us {
+    padding-left: 175px;
+  }
+
+  .main__reviews {
+    padding-left: 175px;
+  }
+
+  .main__contacts {
+    padding-left: 175px;
+  }
 }
