@@ -1,7 +1,6 @@
 .week-product {
   background-color: @white;
   margin-top: 30px;
-  padding-bottom: 36px;
   display: flex;
   flex-direction: column;
 }
@@ -82,6 +81,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-content: flex-start;
   }
   
@@ -116,28 +116,40 @@
 
 @media (min-width: @desktop-width) {
   .week-product {
+    justify-content: flex-start;
+    align-content: flex-end;
     height: 636px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+    outline: 2px solid red;
+    background-image: url("../../img/triple-set-mobile@1x.jpg");
+    background-size: 525px 636px;
+    background-repeat: no-repeat;
+    background-position: top right;
   }
 
   .week-product__name {
     .title-desktop();
- 
+    order: 2;
   }
-
+  .week-product__label {
+    outline: 2px solid pink;
+    width: 175px;
+    order: 1;
+  }
   .week-product__details {
-    min-height: 500px;
-
+    min-height: 490px;
+    margin-left: 175px;
+    order: 3;
   }
 
   .week-product__img {
-    outline: 2px solid blue;
-    height: 525px;
-    width: 350px;
+    display: none;
+  }
 
-    margin-top: 68px;
+  .week-product__cost {
+    margin-top: 110px;
+  }
+
+  .week-product__button {
+    align-self: flex-start;
   }
 }
