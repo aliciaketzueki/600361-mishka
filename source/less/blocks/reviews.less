@@ -59,6 +59,7 @@
   }
   .reviews__title {
     order: 1;
+    .title-tablet();
   }
   .reviews__list {
     order: 3;
@@ -72,9 +73,12 @@
   .reviews__button {
     order: 2;
     margin: 0;
+    width: 175px;
   }
 }
 
 @media (min-width: @desktop-width) {
-
+  .reviews__title {
+    .title-desktop();
+  }
 }

@@ -55,13 +55,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts__title {
+    .title-tablet();
+  }
   .contacts__list {
     flex-direction: row;
     justify-content: space-between;
   }
-  .contacts__item {
-
-  }
+  
   .contacts__button {
     width: 230px;
   }
@@ -77,8 +78,7 @@
   }
 
   .contacts__title {
-    font-size: 53px;
-    line-height: 57px;
+    .title-desktop();
     order: 1;
   }
 
