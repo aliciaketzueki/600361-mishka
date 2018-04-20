@@ -1,33 +1,69 @@
-/*
 .slogan {
-
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
 }
-*/
+
 .slogan__title {
-  .main-title();
+  .title();
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f9f9f9;
+  height: 373px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 30px;
 }
 
 .slogan__list {
   .list();
 }
 
-.slogan__item {
-  background-color: @blue;
-  padding: 27px 0;
-  padding-left: 30px;
-
-  &:nth-child(2) {
-    background-color: #56c3b2;
-  }
-}
-
 .slogan__link {
   color: @white;
   text-decoration: none;
   font-size: 19px;
-  opacity: 1;
+  display: block;
+  padding: 27px 0;
+  padding-left: 30px;
+
+  &--interior {
+    background-color: @blue;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slogan__title {
+    padding: 0;
+    justify-content: center;
+    .title-tablet();
+  }
+  
+  .slogan__list {
+    display: flex;
+  }
+
+  .slogan__item {
+    flex-grow: 1;
+  }
+
+  .slogan__link {
+    padding-left: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan-title {
+    .title-desktop();
   }
 }
