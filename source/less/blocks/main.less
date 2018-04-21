@@ -7,7 +7,6 @@
 .main__wrapper {
   width: 260px;
   margin: 0 auto;
-  outline: 2px solid blue;
 }
 
 .main__week-product,
@@ -82,13 +81,17 @@
 @media (min-width: @desktop-width) {
   .main {
     width: 1250px;
+
+    &--inner {
+      width: 1150px
+    }
   }
 
   .main__wrapper {
     width: 1075px;
 
-    &--desktop {
-      width: 1150px;
+    &--inner {
+      width: 1050px;
     }
   }
 
@@ -120,9 +123,5 @@
   .main__week-product {
     padding-bottom: 73px;
     margin-top: 74px;
-  }
-
-  .main__catalog {
-    margin-top: 131px;
   }
 }

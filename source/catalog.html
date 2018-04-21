@@ -8,8 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <nav class="header__navigation nav">
+    <header class="header header--inner">
+      <nav class="header__navigation header__navigation--inner nav">
         <div class="nav__logo-wrapper">
           <a class="header__logo" href="index.html">
             <img class="logo header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
@@ -48,42 +48,54 @@
       </div>
     </header>
 
-    <main class="main">
-      <div class="main__wrapper main__wrapper--desktop">
+    <main class="main main--inner">
+      <div class="main__wrapper main__wrapper--inner">
         <section class="main__catalog catalog">
           <ul class="catalog__list">
             <li class="catalog__item">
               <a class="catalog__item-image link-wrapper" href="catalog-1.html">
                 <img src="#" alt="Зайчик-попрыгайчик">
               </a>
-              <a class="catalog__item-title" href="catalog-1.html">
-                <h3 class="catalog__name">Зайчик-попрыгайчик</h3>
-              </a>
-              <p class="catalog__description">Рост 30 см, вес 200 г</p>
-              <p class="catalog__cost">1200 руб.</p>
-              <button class="catalog__button" type="button" aria-label="Добавить в корзину">Корзина</button>
+              <div class="catalog__item-wrapper">
+                <a class="catalog__item-title" href="catalog-1.html">
+                  <h3 class="catalog__name">Зайчик-попрыгайчик</h3>
+                </a>
+                <p class="catalog__description">Рост 30 см, вес 200 г</p>
+              </div>
+              <div class="catalog__cost-wrapper">
+                <p class="catalog__cost">1200 руб.</p>
+                <button class="catalog__button" type="button" aria-label="Добавить в корзину">Корзина</button>
+              </div>
             </li>
             <li class="catalog__item">
               <a class="catalog__item-image link-wrapper" href="catalog-2.html">
                 <img src="#" alt="Корзинка для белья">
               </a>
-              <a class="catalog__item-title" href="catalog-2.html">
-                <h3 class="catalog__name">Корзинка для белья</h3>
-              </a>
-              <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
-              <p class="catalog__cost">690 руб.</p>
-              <button class="catalog__button" type="button" aria-label="Добавить в корзину">Корзина</button>
+              <div class="catalog__item-wrapper">
+                <a class="catalog__item-title" href="catalog-2.html">
+                  <h3 class="catalog__name">Корзинка для белья</h3>
+                </a>
+                <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div class="catalog__cost-wrapper">
+                <p class="catalog__cost">690 руб.</p>
+                <button class="catalog__button" type="button" aria-label="Добавить в корзину">Корзина</button>
+              </div>
             </li>
             <li class="catalog__item">
               <a class="catalog__item-image link-wrapper" href="catalog-3.html">
                 <img src="#" alt="Большая корзинка для игрушек">
               </a>
-              <a class="catalog__item-title" href="catalog-3.html">
-                <h3 class="catalog__name">Большая корзинка для игрушек</h3>
-              </a>
-              <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
-              <p class="catalog__cost">1500 руб.</p>
-              <button class="catalog__button" type="button" aria-label="Добавить в корзину">Корзина</button>
+              <div class="catalog__item-wrapper">
+                <a class="catalog__item-title" href="catalog-3.html">
+                  <h3 class="catalog__name">Большая корзинка для игрушек</h3>
+                </a>
+                <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="catalog__cost-wrapper">
+                <p class="catalog__cost">1500 руб.</p>
+                <button class="catalog__button" type="button" aria-label="Добавить в корзину">Корзина</button>
+              </div>
             </li>
           </ul>
         </section>
@@ -99,7 +111,7 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer--inner">
       <a class="footer__logo" href="index.html">
         <img class="logo footer__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
       </a>

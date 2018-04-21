@@ -39,16 +39,35 @@
     flex-grow: 1;
     padding-left: 50px;
   }
+
+  .header__navigation {
+    padding: 0 50px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .header {
     width: 1250px;
     background-position: center 93px;
-    
+
+    &--inner {
+      width: 1150px;
+    }
   }
+
   .header__logo {
     flex-grow: 1;
     padding-left: 100px;
   }
+
+  .header__navigation {
+    padding: 0 100px;
+
+    &--inner {
+      padding: 0 50px;
+    }
+  }
 }
+
+
+
