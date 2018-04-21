@@ -9,34 +9,46 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo">
-        <img class="logo header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
-      </a>
       <button class="header__button" type="button">Открыть меню</button>
-      <nav class="header__navigation">
-        <ul class="header__menu menu">
-          <li class="menu__item">
+      <nav class="header__navigation menu">
+        <a class="header__logo">
+          <img class="logo header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
+        </a>
+        <ul class="menu__list menu__list--nav">
+          <li class="menu__item menu__item--catalog">
             <a class="menu__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item menu__item--order">
             <a class="menu__link" href="form.html">Вязание на заказ</a>
           </li>
-          <li class="menu__item">
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__item menu__item--search">
             <input class="menu__link" type="search" placeholder="Поиск по сайту">
             <button class="button menu__search" type="button">Поиск</button>
           </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--basket" href="#">Корзина: пока пуста</a>
+          <li class="menu__item menu__item--cart">
+            <a class="menu__link menu__link--cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
+        <ul class="menu__list menu__list--hidden">
+          <li class="menu__item menu__item--new">
+            <a class="menu__link menu__link--new" href="#">Новые поступления</a>
+          </li>
+          <li class="menu__item menu__item--sale">
+            <a class="menu__link menu__link--sale" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="menu__delivery">Бесплатная доставка по России</p>
       </nav>
+      <div class="page-title page-title--home">
+        <h1 class="page-title__slogan">Милые штуки ручной
+          <br> работы для дома</h1>
+      </div>
     </header>
 
     <main class="main">
       <header class="main__slogan slogan">
-        <div class="main__page-title main__page-title--home">
-          <h1 class="slogan__title">Милые штуки ручной<br> работы для дома</h1>
-        </div>
         <ul class="slogan__list">
           <li class="slogan__item">
             <a class="slogan__link slogan__link--interior" href="catalog-interior.html">Предметы<br> интерьера</a>
