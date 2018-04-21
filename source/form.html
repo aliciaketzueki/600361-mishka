@@ -9,34 +9,48 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="index.html">
-        <img class="logo header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
-      </a>
-      <button class="header__button" type="button">Открыть меню</button>
-      <nav class="header__navigation">
-        <ul class="header__menu menu">
-          <li class="menu__item">
-            <a class="menu__link" href="catalog.html">Каталог товаров</a>
+      <nav class="header__navigation nav">
+        <div class="nav__logo-wrapper">
+          <a class="header__logo" href="index.html">
+            <img class="logo header__logo-img" src="img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
+          </a>
+          <button class="header__button" type="button">Открыть меню</button>
+        </div>
+        <ul class="nav__list nav__list--nav">
+          <li class="nav__item nav__item--catalog">
+            <a class="nav__link" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link">Вязание на заказ</a>
-          </li>
-          <li class="menu__item">
-            <input class="menu__link" type="search" placeholder="Поиск по сайту">
-            <button class="button menu__search" type="button">Поиск</button>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link menu__link--basket" href="#">Корзина: пока пуста</a>
+          <li class="nav__item nav__item--order">
+            <a class="nav__link">Вязание на заказ</a>
           </li>
         </ul>
+        <ul class="nav__list nav__list--tools">
+          <li class="nav__item nav__item--search">
+            <input class="nav__link" type="search" placeholder="Поиск по сайту">
+            <button class="button nav__search" type="button">Поиск</button>
+          </li>
+          <li class="nav__item nav__item--cart">
+            <a class="nav__link nav__link--cart" href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list--hidden">
+          <li class="nav__item nav__item--new">
+            <a class="nav__link nav__link--new" href="#">Новые поступления</a>
+          </li>
+          <li class="nav__item nav__item--sale">
+            <a class="nav__link nav__link--sale" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="nav__delivery">Бесплатная доставка по России</p>
       </nav>
+      <div class="page-title">
+        <h2 class="page-title__slogan">Вязание на заказ</h2>
+      </div>
     </header>
 
     <main class="main">
       <header class="main__order order">
-        <div class="main__page-title">
-          <h2 class="order__title">Вязание на заказ</h2>
-        </div>
+        
         <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </header>
       <form class="main__order-form order-form" action="https://echo.htmlacademy.ru/" method="post">
