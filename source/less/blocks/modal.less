@@ -1,19 +1,30 @@
 .modal {
-  display: none;
   width: 320px;
   margin: 0 auto;
   border-top: 1px solid #c7c7c7;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  /*===потом убрать*/
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /*================*/
+  padding: 0 30px;
+  padding-bottom: 45px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal__title {
   .title();
-  margin-top: 35px;
+  width: 55%;
+  margin-bottom: 17px;
+  text-align: center;
 }
 
 .modal__form {
-  margin-top: 16px;
-  padding-bottom: 46px;
+  width: 100%;
 }
 
 .modal__form-field {
@@ -25,16 +36,20 @@
   color: @grey;
   font-size: 15px;
   line-height: 30px;
+  text-align: center;
 }
 
 .modal__list {
   .list();
+  display: flex;
+  justify-content: space-between;
+  margin-top: 21px;
+}
+
+.modal__item {
+  border: 2px solid @border;
 }
 /*
-.modal__item {
-
-}
-
 .modal__input {
 
 }
@@ -49,4 +64,21 @@
   color: @white;
   border: 0;
   margin-top: 31px;
+  padding: 18px 0;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 568px;
+    padding-left: 109px;
+    padding-right: 109px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+    width: 100%;
+    outline: 2px solid red;
+  }
 }
