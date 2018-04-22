@@ -1,7 +1,10 @@
 .main {
-  outline: 2px solid red;
   width: 320px;
   margin: 0 auto;
+}
+
+.main__header {
+  background-color: @light-grey;
 }
 
 .main__wrapper {
@@ -51,14 +54,14 @@
   .main {
     width: 768px;
   }
+  
+  .main__header {
+    margin-top: -64px;
+  }
 
   .main__wrapper {
     width: 668px;
     margin: 0 auto;
-  }
-
-  .main__menu {
-    padding: 0 50px;
   }
 
   .main__contacts {
@@ -111,8 +114,8 @@
     }
   }
 
-  .main__menu {
-    padding: 0 100px;
+  .main__header {
+    padding: 0 50px;
   }
 
   .main__order-form {

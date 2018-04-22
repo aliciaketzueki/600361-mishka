@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -18,16 +18,17 @@
         </div>
         <ul class="nav__list nav__list--nav">
           <li class="nav__item nav__item--catalog">
-            <a class="nav__link" href="catalog.html">Каталог товаров</a>
+            <a class="nav__link nav__link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="nav__item nav__item--order">
-            <a class="nav__link" href="form.html">Вязание на заказ</a>
+            <a class="nav__link nav__link--order" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="nav__list nav__list--tools">
           <li class="nav__item nav__item--search">
-            <input class="nav__link" type="search" placeholder="Поиск по сайту">
-            <button class="button nav__search" type="button">Поиск</button>
+            <a class="nav__link nav__link--search" href="#">
+              <p class="nav__search">Поиск по сайту</p>
+            </a>
           </li>
           <li class="nav__item nav__item--cart">
             <a class="nav__link nav__link--cart" href="#">Корзина: пока пуста</a>
@@ -43,13 +44,12 @@
         </ul>
         <p class="nav__delivery">Бесплатная доставка по России</p>
       </nav>
-      <div class="page-title page-title--home">
-        <h1 class="page-title__slogan">Милые штуки ручной
-          <br> работы для дома</h1>
-      </div>
     </header>
     <main class="main">
-      <header class="main__menu menu">
+      <header class="main__header menu">
+        <div class="page-title page-title--home">
+          <h1 class="page-title__title page-title__title--home">Милые штуки ручной<br> работы для дома</h1>
+        </div>
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link menu__link--interior" href="catalog-interior.html">Предметы<br> интерьера</a>

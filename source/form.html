@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -26,8 +26,9 @@
         </ul>
         <ul class="nav__list nav__list--tools">
           <li class="nav__item nav__item--search">
-            <input class="nav__link" type="search" placeholder="Поиск по сайту">
-            <button class="button nav__search" type="button">Поиск</button>
+            <a class="nav__link nav__link--search" href="#">
+              <p class="nav__search">Поиск по сайту</p>
+            </a>
           </li>
           <li class="nav__item nav__item--cart">
             <a class="nav__link nav__link--cart" href="#">Корзина: пока пуста</a>
@@ -43,14 +44,16 @@
         </ul>
         <p class="nav__delivery">Бесплатная доставка по России</p>
       </nav>
-      <div class="page-title">
-        <h2 class="page-title__slogan">Вязание на заказ</h2>
-      </div>
     </header>
     <main class="main main--inner">
+      <header class="main__header">
+        <div class="page-title">
+          <h2 class="page-title__title">Вязание на заказ</h2>
+        </div>
+      </header>
       <div class="main__wrapper main__wrapper--inner">
+        <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="main__order-form order-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <section class="order-form__parameter">
             <h2 class="order-form__legend">Тип</h2>
             <ul class="order-form__list">
