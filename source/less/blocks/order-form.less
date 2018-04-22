@@ -8,11 +8,12 @@
   color: @grey;
   margin: 0;
   font-weight: normal;
+  padding: 0 30px;
 }
 
 .order-form__parameter {
   border: 0;
-  padding: 0;
+  padding: 0 30px;
   margin: 0;
   margin-top: 30px;
 }
@@ -87,6 +88,10 @@
   margin-top: 18px;
 }
 
+.order-form__wrapper {
+  padding: 0 30px;
+}
+
 .order-form__button {
   .main-button();
   width: 100%;
@@ -99,6 +104,7 @@
   .order-form__description {
     font-size: 17px;
     line-height: 30px;
+    padding: 0 50px;
   }
 
   .order-form__parameter {
@@ -107,10 +113,12 @@
     justify-content: space-between;
     align-items: baseline;
     margin-top: 50px;
+    padding: 0 50px;
 
     &--color {
       background-color: @light-grey;
-      padding: 50px 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
 
     &--tel {
@@ -126,8 +134,8 @@
   }
 
   .order-form__legend {
-    width: 25%;
-    text-align: center;
+    width: 22%;
+    text-align: left;
   }
 
   .order-form__label {
@@ -189,6 +197,7 @@
     justify-content: space-between;
     align-items: baseline;
     margin-top: 53px;
+    padding: 0 50px;
   }
 
   .order-form__button {
@@ -204,6 +213,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .order-form__description {
+    padding: 0 225px;
+  }
+
   .order-form__parameter {
     &--name {
       padding-right: 175px;
@@ -224,6 +237,8 @@
 
   .order-form__legend {
     width: 175px;
+    padding-left: 62px;
+    box-sizing: border-box;
   }
 
   .order-form__list {
