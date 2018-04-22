@@ -206,19 +206,19 @@
 @media (min-width: @desktop-width) {
   .order-form__parameter {
     &--name {
-      margin-right: 175px;
+      padding-right: 175px;
     }
 
     &--tel {
-      margin-right: 175px;
+      padding-right: 175px;
     }
 
     &--email {
-      margin-right: 175px;
+      padding-right: 175px;
     }
 
     &--text {
-      margin-right: 175px;
+      padding-right: 175px;
     }
   }
 
@@ -230,6 +230,20 @@
     &--color {
       height: 128px;
     }
+  }
+
+  .order-form__input {
+    &--email {
+      flex-grow: 1;
+    }
+
+    &--tel {
+      flex-grow: 1;
+    }
+  }
+
+  .order-form__textarea {
+    flex-grow: 1;
   }
 
   .order-form__button {
