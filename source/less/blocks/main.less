@@ -1,16 +1,17 @@
-.main {
-  width: 320px;
-  margin: 0 auto;
-  outline: 2px solid red;
-}
-
 .main__header {
   background-color: @light-grey;
 }
 
 .main__wrapper {
+  outline: 2px solid red;
+  width: 320px;
+  margin: 0 auto;
   padding: 0 30px;
-  border-bottom: 6px solid @light-grey;
+  box-sizing: border-box;
+
+  &--header {
+    padding: 0;
+  }
 
   &--inner {
     border: 0;
@@ -46,20 +47,25 @@
 
 .main__order-form {
   margin-bottom: 55px;
-  margin-top: 30px;
 }
 
 @media (min-width: @tablet-width) {
-  .main {
-    width: 768px;
-  }
-
   .main__header {
     margin-top: -55px;
   }
 
   .main__wrapper {
+    width: 768px;
     padding: 0 50px;
+
+    &--header {
+      padding: 0;
+    }
+
+    &--color {
+      padding: 0;
+      background-color: @light-grey;
+    }
   }
 
   .main__contacts {
@@ -87,7 +93,6 @@
 
   .main__order-form {
     margin-bottom: 50px;
-    margin-top: 80px;
   }
 
   .main__making {
@@ -96,19 +101,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main {
-    width: 1250px;
-
-    &--inner {
-      width: 1150px;
-    }
-  }
-
   .main__wrapper {
+    width: 1250px;
     padding: 0;
     margin: 0 100px;
 
     &--inner {
+      width: 1150px;
       padding: 0 50px;
       margin: 0;
     }
@@ -119,7 +118,6 @@
   }
 
   .main__order-form {
-    margin-top: 125px;
     margin-bottom: 50px;
   }
 
