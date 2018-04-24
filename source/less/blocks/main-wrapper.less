@@ -1,0 +1,33 @@
+.main-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  outline: 2px solid red;
+
+  &--header {
+    padding: 0;
+  }
+
+  &--contacts {
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-wrapper {
+    width: 768px;
+    padding: 0 50px;
+
+    &--contacts {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-wrapper {
+    width: 1150px;
+    padding: 0 50px;
+  }
+}

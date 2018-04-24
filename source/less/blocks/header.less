@@ -1,31 +1,23 @@
-.header {
+.header__navigation {
   width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
-  .header {
-    width: 768px;
-  }
-
   .header__navigation {
+    width: 768px;
     padding: 0 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .header {
-    width: 1250px;
-
-    &--inner {
-      width: 1150px;
-    }
-  }
-
   .header__navigation {
+    width: 1250px;
     padding: 0 100px;
 
     &--inner {
+      width: 1150px;
       padding: 0 50px;
     }
   }

@@ -34,9 +34,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .menu {
+    background-size: cover;
+  }
+
   .menu__list {
     display: flex;
-    padding: 0 50px;
   }
 
   .menu__item {
@@ -46,4 +49,7 @@
   .menu__link {
     padding-left: 36px;
   }
+}
+
+@media (min-width: @desktop-width) {
 }

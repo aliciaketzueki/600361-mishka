@@ -7,13 +7,12 @@
   font-size: 13px;
   color: @grey;
   margin: 0;
+  margin-top: 34px;
   font-weight: normal;
-  padding: 0 30px;
 }
 
 .order-form__parameter {
   border: 0;
-  padding: 0 30px;
   margin: 0;
   margin-top: 30px;
 }
@@ -88,10 +87,6 @@
   margin-top: 18px;
 }
 
-.order-form__wrapper {
-  padding: 0 30px;
-}
-
 .order-form__button {
   .main-button();
   width: 100%;
@@ -104,7 +99,11 @@
   .order-form__description {
     font-size: 17px;
     line-height: 30px;
-    padding: 0 50px;
+    margin-top: 75px;
+  }
+
+  .order-form__wrapper {
+    background-color: @light-grey;
   }
 
   .order-form__parameter {
@@ -113,24 +112,7 @@
     justify-content: space-between;
     align-items: baseline;
     margin-top: 50px;
-    padding: 0 50px;
-
-    &--color {
-      background-color: @light-grey;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    &--tel {
-      background-color: @light-grey;
-      padding-top: 50px;
-    }
-
-    &--email {
-      background-color: @light-grey;
-      margin-top: 0;
-      padding-bottom: 50px;
-    }
+    margin-bottom: 50px;
   }
 
   .order-form__legend {
@@ -150,9 +132,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    &--color {
-      height: 204px;
-    }
   }
 
   .order-form__item {
@@ -192,14 +171,6 @@
     margin-top: 0;
   }
 
-  .order-form__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-top: 53px;
-    padding: 0 50px;
-  }
-
   .order-form__button {
     width: 230px;
     margin: 0;
@@ -214,25 +185,11 @@
 
 @media (min-width: @desktop-width) {
   .order-form__description {
-    padding: 0 225px;
+    margin-top: 125px;
   }
 
   .order-form__parameter {
-    &--name {
-      padding-right: 175px;
-    }
 
-    &--tel {
-      padding-right: 175px;
-    }
-
-    &--email {
-      padding-right: 175px;
-    }
-
-    &--text {
-      padding-right: 175px;
-    }
   }
 
   .order-form__legend {
@@ -242,9 +199,7 @@
   }
 
   .order-form__list {
-    &--color {
-      height: 128px;
-    }
+
   }
 
   .order-form__input {
@@ -264,8 +219,4 @@
   .order-form__button {
     margin-left: 175px;
   }
-}
-
-.order-form__list--color {
-  outline: 2px solid red;
 }
