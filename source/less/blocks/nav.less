@@ -1,0 +1,180 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  box-sizing: border-box;
+  border: 1px solid @border;
+  border-bottom: 0;
+}
+
+.nav__logo {
+
+}
+
+.nav__button {
+  background-color: @white;
+  border: 0;
+  height: 100%;
+}
+
+.nav__list {
+  .list();
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.nav__item {
+  border: 1px solid @border;
+  border-bottom: 0;
+  min-height: 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__link {
+  .link();
+  .interactive();
+}
+
+.nav__search {
+  margin: 0;
+  .interactive(); /*или убрать?? */
+}
+
+.nav__delivery {
+  display: none;
+  font-size: 15px;
+  line-height: 24px;
+  color: @grey;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__logo-wrapper {
+    order: 1;
+    justify-content: flex-start;
+    border: 0;
+  }
+
+  .nav__button {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+
+    &--tools {
+      order: 2;
+      min-height: 88px;
+    }
+
+    &--nav {
+      order: 3;
+      min-height: 55px;
+    }
+
+    &--hidden {
+      display: none;
+      font-size: 15px;
+    }
+  }
+
+  .nav__item {
+    border: 0;
+    min-height: 0;
+
+    &--search {
+      border-left: 1px solid @border;
+      border-right: 1px solid @border;
+    }
+
+    &--cart {
+      padding-left: 83px;
+    }
+
+    &--catalog {
+      padding-right: 37px;
+    }
+  }
+
+  .nav__link {
+    &--search {
+      width: 82px;
+    }
+  }
+
+  .nav__search {
+    display: none;
+  }
+
+  .nav__delivery {
+    display: block;
+    text-align: right;
+    order: 4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav__logo-wrapper {
+    order: 2;
+    justify-content: center;
+  }
+
+  .nav__list {
+    &--nav {
+      order: 1;
+      min-height: 88px;
+    }
+
+    &--tools {
+      order: 3;
+      min-height: 88px;
+    }
+
+    &--hidden {
+      display: flex;
+      order: 4;
+      min-height: 55px;
+    }
+  }
+
+  .nav__item {
+    min-height: 0;
+
+    &--catalog {
+      padding-right: 35px;
+      border-right: 1px solid @border;
+      
+    }
+
+    &--order {
+      padding-left: 35px;
+    }
+
+    &--new {
+      padding-right: 60px;
+    }
+  }
+
+  .nav__delivery {
+    order: 5;
+  }
+}

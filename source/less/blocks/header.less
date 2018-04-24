@@ -1,23 +1,32 @@
-/*
 .header {
-
-}
-*/
-.header__logo {
-  display: block;
-  .interactive();
+  width: 320px;
+  margin: 0 auto;
 }
 
-.header__button {
-  background-color: @white;
-  border: 0;
-}
-/*
-.header__navigation {
+@media (min-width: @tablet-width) {
+  .header {
+    width: 768px;
+  }
 
+  .header__navigation {
+    padding: 0 50px;
+  }
 }
 
-.header__menu {
+@media (min-width: @desktop-width) {
+  .header {
+    width: 1250px;
 
+    &--inner {
+      width: 1150px;
+    }
+  }
+
+  .header__navigation {
+    padding: 0 100px;
+
+    &--inner {
+      padding: 0 50px;
+    }
+  }
 }
-*/

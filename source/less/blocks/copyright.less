@@ -1,20 +1,29 @@
-/*
 .copyright {
-
-}
-*/
-.copyright__text {
-  font-size: 19px;
-  line-height: 18px;
-  margin: 0;
-  margin-top: 10px;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright__link {
   .link();
-}
-/*
-.copyright__logo {
+  display: flex;
+  align-items: center;
 
+  &:active {
+    opacity: 0.3;
+  }
 }
-*/
+
+.copyright__text {
+  font-size: 19px;
+  line-height: 18px;
+  margin: 0;
+  padding-right: 30px;
+}
+
+.copyright__logo {
+  &:hover {
+    fill: #46c1ae;
+  }
+}

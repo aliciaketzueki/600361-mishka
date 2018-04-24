@@ -1,7 +1,7 @@
 .week-product {
   background-color: @white;
-  margin-top: 30px;
-  padding-bottom: 36px;
+  display: flex;
+  flex-direction: column;
 }
 
 .week-product__name {
@@ -15,11 +15,20 @@
   margin: 0;
 }
 
+.week-product__wrapper {
+  margin-top: 28px;
+  margin-bottom: 28px;
+
+  &--button {
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+}
+
 .week-product__description {
   font-size: 15px;
   font-weight: normal;
   margin: 0;
-  margin-top: 28px;
 }
 
 .week-product__properties {
@@ -28,6 +37,7 @@
   font-weight: normal;
   margin-top: 27px;
   border-collapse: collapse;
+  width: 100%;
 }
 
 .week-product__stroke {
@@ -43,16 +53,100 @@
 }
 
 .week-product__img {
-  margin-top: 28px;
+  width: 260px;
+  height: 315px;
 }
 
 .week-product__cost {
   color: @grey;
   margin: 0;
-  margin-top: 25px;
+  text-align: center;
 }
 
 .week-product__button {
   .main-button();
   margin-top: 25px;
+  padding: 16px 0;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .week-product {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .week-product__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .week-product__name {
+    .title-tablet();
+  }
+
+  .week-product__label {
+    width: 15%;
+    text-align: center;
+  }
+
+  .week-product__wrapper {
+    width: 50%;
+    margin: 0;
+    margin-top: 50px;
+    padding-right: 44px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+
+    &--button {
+      margin-top: -130px;
+      justify-content: flex-end;
+    }
+  }
+
+  .week-product__img {
+    height: 404px;
+    width: 333px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .week-product {
+    justify-content: flex-start;
+    align-content: flex-end;
+  }
+
+  .week-product__title {
+    justify-content: flex-start;
+    z-index: 2;
+  }
+
+  .week-product__name {
+    .title-desktop();
+    order: 1;
+  }
+
+  .week-product__label {
+    outline: 2px solid pink;
+    width: 175px;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .week-product__wrapper {
+    padding-left: 175px;
+  }
+
+  .week-product__img {
+    height: 636px;
+    width: 525px;
+    margin-top: -110px;
+    z-index: 1;
+  }
 }

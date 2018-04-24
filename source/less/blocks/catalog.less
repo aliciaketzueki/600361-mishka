@@ -3,33 +3,47 @@
 
 }
 */
-.catalog__title {
-  .main-title();
-}
 
 .catalog__list {
   .list();
-  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .catalog__item {
-  margin-top: 30px;
   border: 1px solid #ededed;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 .catalog__item-image {
   .link();
+  height: 195px;
+  outline: 2px solid pink;
 }
 
 .catalog__item-title {
   .link();
   display: block;
-  margin-left: 33px;
+}
+
+.catalog__wrapper {
+  margin: 0 28px;
+}
+
+.catalog__item-wrapper {
+  padding: 28px 0;
+  border-bottom: 1px solid #ededed;
 }
 
 .catalog__name {
   .interactive();
   margin: 0;
+  font: inherit;
 }
 
 .catalog__description {
@@ -38,15 +52,78 @@
   line-height: 30px;
   font-weight: normal;
   margin: 0;
-  margin-left: 33px;
+}
+
+.catalog__cost-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
 }
 
 .catalog__cost {
   font-size: 15px;
-  margin-left: 33px;
+  margin: 0;
 }
 
 .catalog__button {
   background-color: @white;
   border: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__item {
+    margin-bottom: 54px;
+    height: 334px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .catalog__name {
+    font-size: 20px;
+  }
+
+  .catalog__item-image {
+    height: 334px;
+    width: 50%;
+  }
+
+  .catalog__wrapper {
+    width: 40%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .catalog__item-wrapper {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .catalog__item-image {
+    height: 463px;
+    width: 316px;
+  }
+
+  .catalog__item {
+    min-height: 658px;
+    width: 316px;
+    margin-bottom: 57px;
+  }
+
+  .catalog__wrapper {
+    width: 80%;
+  }
+
+  .catalog__item-wrapper {
+    padding-bottom: 0;
+  }
 }
