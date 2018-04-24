@@ -1,9 +1,9 @@
 .main__header {
   background-color: @light-grey;
+  border-top: 1px solid #dfdfdf;
 }
 
 .main__wrapper {
-  outline: 2px solid red;
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
@@ -15,10 +15,6 @@
 
   &--contacts {
     padding: 0;
-  }
-
-  &--inner {
-    border: 0;
   }
 }
 
@@ -65,11 +61,6 @@
     &--contacts {
       padding: 0;
     }
-
-    &--color {
-      padding: 0;
-      background-color: @light-grey;
-    }
   }
 
   .main__contacts {
@@ -105,12 +96,20 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main__header {
+    border: 0;
+  }
+
   .main__wrapper {
     width: 1250px;
     padding: 0 100px;
 
     &--inner {
       width: 1150px;
+      padding: 0 50px;
+    }
+
+    &--header {
       padding: 0 50px;
     }
   }
@@ -141,6 +140,10 @@
   .main__week-product {
     padding-bottom: 73px;
     margin-top: 140px;
+  }
+
+  .main__catalog {
+    margin-top: 130px;
   }
 
   .main__making {
