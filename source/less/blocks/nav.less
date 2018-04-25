@@ -27,8 +27,8 @@
   background-color: @white;
   border: 0;
   padding: 0;
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
 }
 
 .nav__button--closed {
@@ -48,20 +48,35 @@
   &::before {
     content: "";
     position: absolute;
-    top: 1px;
-    right: 1px;
-    width: 21px;
-    height: 21px;
+    width: 26px;
+    height: 3px;
+    top: 9px;
+    right: 0;
+    transform: rotate(45deg);
+    background-color: #221f1f;
+    box-shadow: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    top: 9px;
+    right: 0;
+    transform: rotate(-45deg);
     background-color: #221f1f;
   }
 }
 
 .nav__list {
   .list();
+  display: none;
+}
 
-  &--hidden {
-    display: none;
-  }
+.nav__list--show {
+  display: block;
+  .list();
 }
 
 .nav__item {
