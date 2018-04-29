@@ -54,7 +54,18 @@
   height: 54px;
   box-sizing: border-box;
   padding-left: 15px;
-  outline: 2px solid pink;
+
+  &--tel {
+    background-image: url("../../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+  }
+
+  &--email {
+    background-image: url("../../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: right 4px center;
+  }
 
   &:hover,
   &:active {
@@ -108,6 +119,7 @@
 
   .order-form__parameter {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
@@ -158,11 +170,13 @@
     &--email {
       background-color: @light-grey;
       width: 75%;
+      background-position: right 22px center;
     }
 
     &--tel {
       background-color: @light-grey;
       width: 75%;
+      background-position: right 26px center;
     }
   }
 
@@ -173,7 +187,7 @@
 
   .order-form__button {
     width: 230px;
-    margin: 0;
+    margin-top: 53px;
   }
 
   .order-form__tag {
@@ -205,10 +219,12 @@
   .order-form__input {
     &--email {
       flex-grow: 1;
+      background-position: right 4px center;
     }
 
     &--tel {
       flex-grow: 1;
+      background-position: right 8px center;
     }
   }
 
@@ -218,5 +234,6 @@
 
   .order-form__button {
     margin-left: 175px;
+    margin-top: 49px;
   }
 }

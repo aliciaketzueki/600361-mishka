@@ -29,44 +29,15 @@
   padding: 0;
   width: 26px;
   height: 26px;
-}
-
-.nav__button--closed {
-  &::before {
-    content: "";
-    position: absolute;
-    right: 1px;
-    top: 4px;
-    width: 20px;
-    height: 2px;
-    background-color: #221f1f;
-    box-shadow: 0 6px 0 #221f1f, 0 12px 0 #221f1f;
-  }
+  background-image: url("../../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .nav__button--opened {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 26px;
-    height: 3px;
-    top: 9px;
-    right: 0;
-    transform: rotate(45deg);
-    background-color: #221f1f;
-    box-shadow: none;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 26px;
-    height: 3px;
-    top: 9px;
-    right: 0;
-    transform: rotate(-45deg);
-    background-color: #221f1f;
-  }
+  background-image: url("../../img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .nav__list {
