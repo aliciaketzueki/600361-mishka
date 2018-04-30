@@ -39,5 +39,19 @@
     &--image {
       background-position: 50px bottom;
     }
+
+    &--wave::after {
+      content: "";
+      display: block;
+      background-image: url("../../img/zigzag-line-desktop.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -90px;
+      background-size: 1050px 23px;
+      height: 23px;
+      width: 1050px;
+    }
   }
 }
