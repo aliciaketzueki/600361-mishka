@@ -65,11 +65,11 @@
             <ul class="order-form__list">
               <li class="order-form__item">
                 <input class="order-form__radio" type="radio" name="type" id="accessory" value="accessory for interior" checked>
-                <label class="order-form__label" for="accessory">Аксессуар для интерьера</label>
+                <label class="order-form__label order-form__label--radio" for="accessory">Аксессуар для интерьера</label>
               </li>
               <li class="order-form__item">
                 <input class="order-form__radio" type="radio" name="type" id="toy" value="children's toy">
-                <label class="order-form__label" for="toy">Детская игрушка</label>
+                <label class="order-form__label order-form__label--radio" for="toy">Детская игрушка</label>
               </li>
             </ul>
           </section>
@@ -78,30 +78,30 @@
           <div class="main-wrapper">
             <section class="order-form__parameter">
               <h2 class="order-form__legend">Цвет</h2>
-              <ul class="order-form__list">
+              <ul class="order-form__list order-form__list--color">
                 <li class="order-form__item">
                   <input class="order-form__checkbox" type="checkbox" id="white" name="color-white" checked>
-                  <label class="order-form__label" for="white">Белый</label>
+                  <label class="order-form__label order-form__label--color" for="white">Белый</label>
                 </li>
                 <li class="order-form__item">
                   <input class="order-form__checkbox" type="checkbox" id="grey" name="color-grey" checked>
-                  <label class="order-form__label" for="grey">Серый</label>
+                  <label class="order-form__label order-form__label--color" for="grey">Серый</label>
                 </li>
                 <li class="order-form__item">
                   <input class="order-form__checkbox" type="checkbox" id="tiffany" name="color-tiffany">
-                  <label class="order-form__label" for="tiffany">"Тиффани"</label>
+                  <label class="order-form__label order-form__label--color" for="tiffany">"Тиффани"</label>
                 </li>
                 <li class="order-form__item">
                   <input class="order-form__checkbox" type="checkbox" id="black" name="color-black">
-                  <label class="order-form__label" for="black">Черный</label>
+                  <label class="order-form__label order-form__label--color" for="black">Черный</label>
                 </li>
                 <li class="order-form__item">
                   <input class="order-form__checkbox" type="checkbox" id="pink" name="color-pink">
-                  <label class="order-form__label" for="pink">Розовый</label>
+                  <label class="order-form__label order-form__label--color" for="pink">Розовый</label>
                 </li>
                 <li class="order-form__item">
                   <input class="order-form__checkbox" type="checkbox" id="orange" name="color-orange">
-                  <label class="order-form__label" for="orange">Оранжевый</label>
+                  <label class="order-form__label order-form__label--color" for="orange">Оранжевый</label>
                 </li>
               </ul>
             </section>
@@ -128,11 +128,11 @@
         </div>
         <div class="order-form__wrapper">
           <div class="main-wrapper">
-            <section class="order-form__parameter">
+            <section class="order-form__parameter order-form__parameter--tel">
               <h2 class="order-form__legend">Тел</h2>
               <input class="order-form__input order-form__input--tel" type="tel" placeholder="+7 ХХХ ХХ ХХ*" name="tel" required>
             </section>
-            <section class="order-form__parameter">
+            <section class="order-form__parameter order-form__parameter--email">
               <h2 class="order-form__legend order-form__legend--email">E-mail</h2>
               <input class="order-form__input order-form__input--email" type="email" placeholder="Ваш Email*" name="email" required>
             </section>
