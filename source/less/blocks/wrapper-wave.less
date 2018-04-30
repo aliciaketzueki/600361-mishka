@@ -4,23 +4,23 @@
   &::after {
     content: "";
     display: block;
-    background-image: url("../../img/zigzag-line-desktop.png");
-    background-repeat: no-repeat;
+    background-image: url("../../img/zigzag-line-mobile.png");
+    background-repeat: repeat;
+    height: 6px;
+    width: 100%;
     position: absolute;
     left: 0;
     bottom: -40px;
-    background-size: 100% 6px;
-    height: 6px;
-    width: 100%;
   }
 }
 
 @media (min-width: @tablet-width) {
   .wrapper-wave {
     &::after {
-      background-size: 100% 15px;
-      height: 15px;
+      background-image: url("../../img/zigzag-line-tablet.png");
       bottom: -75px;
+      height: 15px;
+      width: 100%;
     }
   }
 }
