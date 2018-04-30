@@ -1,12 +1,46 @@
 .slider__toggles {
   border: 1px solid @border;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .slider__toggle {
   background-color: @white;
   border: 0;
+  padding: 0;
+  height: 50px;
+  width: 50%;
+  box-sizing: border-box;
 
   &--left {
     border-right: 1px solid @border;
+  }
+
+  &:hover polygon {
+    fill: #666666;
+  }
+
+  &:active polygon {
+    fill: #b2b2b2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__toggles {
+    border: 0;
+    width: 167px;
+  }
+
+  .slider__toggle {
+    border: 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__toggles {
+    width: 175px;
   }
 }

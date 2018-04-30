@@ -3,15 +3,11 @@
 }
 
 .footer__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
 
-.footer__logo {
+.footer__logo-wrapper {
   display: none;
 }
 
@@ -21,16 +17,15 @@
 
 @media (min-width: @tablet-width) {
   .footer__wrapper {
-    width: 768px;
-    padding: 0 50px;
     min-height: 143px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  .footer__logo {
+  .footer__logo-wrapper {
     display: block;
+    min-width: 182px;
   }
 
   .footer__contacts {
@@ -39,16 +34,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .footer__wrapper {
-    width: 1250px;
-    padding: 0 100px;
-
-    &--inner {
-      width: 1150px;
-      padding: 0 50px;
-    }
-  }
-
   .footer__logo {
     display: block;
   }

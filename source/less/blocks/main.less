@@ -4,21 +4,19 @@
 }
 
 .main__contacts {
-  margin-top: 44px;
-  margin-bottom: 39px;
+  padding-bottom: 130px;
 }
 
 .main__reviews {
-  margin-bottom: 45px;
+  margin-bottom: 74px;
   margin-top: 58px;
 }
 
 .main__about-us {
-  margin-top: 31px;
+  margin-top: 74px;
 }
 
 .main__week-product {
-  padding-bottom: 36px;
   margin-top: 30px;
 }
 
@@ -36,25 +34,40 @@
 
 @media (min-width: @tablet-width) {
   .main__header {
-    margin-top: -55px;
+    margin-top: -60px;
+    position: relative;
+    z-index: -1;
+    /*background-image: radial-gradient(ellipse 40px 20px at 15px -2px, transparent 12px, #000 13px);
+    background-color: @white;
+    background-repeat: repeat;
+    background-size: 40px 10px;
+    height: 10px;*/
+    &::after {
+      content: "";
+      background-image: url("../../img/zigzag-fill-tablet.png");
+      background-repeat: repeat;
+      width: 100%;
+      height: 24px;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
   }
 
   .main__contacts {
-    margin-top: 70px;
-    margin-bottom: 57px;
+    padding-bottom: 164px;
   }
 
   .main__reviews {
-    margin-bottom: 69px;
+    margin-bottom: 125px;
     margin-top: 81px;
   }
 
   .main__about-us {
-    margin-top: 59px;
+    margin-top: 125px;
   }
 
   .main__week-product {
-    padding-bottom: 52px;
     margin-top: 54px;
   }
 
@@ -74,6 +87,10 @@
 @media (min-width: @desktop-width) {
   .main__header {
     border: 0;
+
+    &::after {
+      background-size: 1250px 32px;
+    }
   }
 
   .main__order-form {
@@ -86,22 +103,21 @@
   }
 
   .main__contacts {
-    margin-top: 70px;
-    margin-bottom: 105px;
+    margin-top: 160px;
+    padding-bottom: 105px;
   }
 
   .main__reviews {
-    margin-bottom: 67px;
     margin-top: 87px;
   }
 
   .main__about-us {
-    margin-top: 58px;
+    margin-top: 160px;
   }
 
   .main__week-product {
     padding-bottom: 73px;
-    margin-top: 140px;
+    margin-top: 120px;
   }
 
   .main__catalog {

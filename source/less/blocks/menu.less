@@ -12,14 +12,7 @@
   .list();
 }
 
-.menu__link {
-  color: @white;
-  text-decoration: none;
-  font-size: 19px;
-  display: block;
-  padding: 27px 0;
-  padding-left: 30px;
-
+.menu__item {
   &--interior {
     background-color: @blue;
   }
@@ -27,9 +20,35 @@
   &--toys {
     background-color: #56c3b2;
   }
+}
+
+.menu__link {
+  color: @white;
+  text-decoration: none;
+  font-size: 19px;
+  display: block;
+  padding: 27px 30px;
+  background-color: rgba(255, 255, 255, 0);
+
+  &--interior {
+    background-image: url("../../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 245px center;
+  }
+
+  &--toys {
+    background-image: url("../../img/icon-toy.svg");
+    background-repeat: no-repeat;
+    background-position: 233px center;
+  }
+
+  &:hover {
+    transform: scale(0, 5px);
+  }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    /*color: rgba(255, 255, 255, 0.3);*/
+    opacity: 0.3;
   }
 }
 
@@ -48,8 +67,23 @@
 
   .menu__link {
     padding-left: 36px;
+
+    &--interior {
+      background-position: 260px center;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .menu__link {
+    padding: 33px 30px;
+
+    &--interior {
+      background-position: 446px center;
+    }
+
+    &--toys {
+      background-position: 430px center;
+    }
+  }
 }
