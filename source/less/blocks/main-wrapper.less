@@ -11,6 +11,22 @@
   &--contacts {
     padding: 0;
   }
+
+  &--wave {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("../../img/zigzag-line-mobile.png");
+      background-repeat: no-repeat;
+      height: 6px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -40px;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -32,6 +48,15 @@
         background-image: url("../../img/review@2x.jpg");
       }
     }
+
+    &--wave {
+      &::after {
+        background-image: url("../../img/zigzag-line-tablet.png");
+        bottom: -75px;
+        height: 15px;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -45,11 +70,7 @@
     }
 
     &--wave::after {
-      content: "";
-      display: block;
       background-image: url("../../img/zigzag-line-tablet.png");
-      background-repeat: no-repeat;
-      position: absolute;
       left: 50%;
       transform: translateX(-50%);
       bottom: -90px;
