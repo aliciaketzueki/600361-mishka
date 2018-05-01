@@ -55,14 +55,16 @@
   border-bottom: 0;
   min-height: 80px;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .nav__link {
   .link();
   .interactive();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 80px;
 }
 
 .nav__search {
@@ -107,7 +109,7 @@
 
     &--nav {
       order: 3;
-      min-height: 55px;
+      min-height: 60px;
     }
 
     &--hidden {
@@ -135,6 +137,8 @@
   }
 
   .nav__link {
+    min-height: 100%;
+
     &--search {
       width: 82px;
     }
