@@ -1,7 +1,8 @@
 .modal {
   width: 320px;
   margin: 0 auto;
-  border-top: 1px solid #c7c7c7;
+  border: 1px solid #c7c7c7;
+  border-radius: 1px;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   /*===потом убрать*/
   margin-top: 50px;
@@ -36,6 +37,7 @@
   color: @grey;
   font-size: 15px;
   line-height: 30px;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -47,16 +49,47 @@
 }
 
 .modal__item {
-  border: 2px solid @border;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-/*
-.modal__input {
 
+.modal__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
-*/
+
 .modal__label {
-  font-size: 16px;
-  line-height: 15px;
+  font-size: 17px;
+  line-height: 16px;
+  color: @grey;
+  position: relative;
+  width: 80px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 52px;
+    border: 2px solid @border;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.modal__input:hover + .modal__label::after {
+  border: 2px solid #c7c7c7;
+}
+
+.modal__input:checked + .modal__label::after {
+  border: 2px solid #62d1ba;
 }
 
 .modal__button {
@@ -79,6 +112,13 @@
     font-size: 30px;
     line-height: 57px;
     width: 100%;
-    outline: 2px solid red;
+  }
+
+  .modal__label {
+    width: 112px;
+
+    &::after {
+      width: 112px;
+    }
   }
 }
