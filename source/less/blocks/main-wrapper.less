@@ -18,8 +18,9 @@
     &::after {
       content: "";
       display: block;
-      background-image: url("../../img/zigzag-line-mobile.png");
+      background-image: url("../../img/bg-zigzag-line.svg");
       background-repeat: no-repeat;
+      background-size: 100% auto;
       height: 6px;
       width: 100%;
       position: absolute;
@@ -51,7 +52,6 @@
 
     &--wave {
       &::after {
-        background-image: url("../../img/zigzag-line-tablet.png");
         bottom: -75px;
         height: 15px;
         width: 100%;
@@ -70,11 +70,9 @@
     }
 
     &--wave::after {
-      background-image: url("../../img/zigzag-line-tablet.png");
       left: 50%;
       transform: translateX(-50%);
       bottom: -90px;
-      background-size: 1050px 23px;
       height: 23px;
       width: 1050px;
     }

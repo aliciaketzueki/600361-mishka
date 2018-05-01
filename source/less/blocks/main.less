@@ -36,10 +36,11 @@
   .main__header {
     margin-top: -60px;
     position: relative;
+    z-index: 1;
 
     &::after {
       content: "";
-      background-image: url("../../img/zigzag-fill-tablet.png");
+      background-image: url("../../img/bg-zigzag-fill.svg");
       background-repeat: repeat;
       width: 100%;
       height: 24px;
@@ -82,10 +83,6 @@
 @media (min-width: @desktop-width) {
   .main__header {
     border: 0;
-
-    &::after {
-      background-size: 1250px 32px;
-    }
   }
 
   .main__order-form {
