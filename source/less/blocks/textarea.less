@@ -1,0 +1,36 @@
+.textarea {
+	margin-bottom: 0;
+}
+
+.textarea__legend {
+  margin-bottom: 3px;
+}
+
+.textarea__input {
+  min-height: 142px;
+  padding: 0;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid @grey;
+  margin-top: 24px;
+
+  &:hover,
+  &:active {
+    border: 2px solid @blue;
+  }
+}
+
+@media (min-width: @tablet-width) {
+	.textarea__input {
+    width: 75%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form__textarea {
+    flex-grow: 1;
+	}
+}

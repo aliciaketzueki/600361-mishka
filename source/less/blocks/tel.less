@@ -1,0 +1,32 @@
+.tel {
+
+}
+
+.tel__legend {
+  margin-bottom: 5px;
+}
+
+.tel__input {
+	background-image: url("../../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+@media (min-width: @tablet-width) {
+	.tel {
+    margin-bottom: 14px;
+	}
+	
+	.tel__input {
+    background-color: @light-grey;
+    width: 75%;
+    background-position: right 26px center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+	.tel__input {
+    flex-grow: 1;
+    background-position: right 8px center;
+  }
+}

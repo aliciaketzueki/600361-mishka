@@ -1,0 +1,31 @@
+.email {}
+
+.email__legend {
+  margin-bottom: 5px;
+}
+
+.email__input {
+  background-image: url("../../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+}
+
+@media (min-width: @tablet-width) {
+  .email {
+    margin-top: 0;
+	}
+	
+
+  .email__input {
+    background-color: @light-grey;
+    width: 75%;
+    background-position: right 22px center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .email__input {
+    flex-grow: 1;
+    background-position: right 4px center;
+  }
+}
