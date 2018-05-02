@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0 30px;
   box-sizing: border-box;
+  outline: 2px solid red;
 
   &--header {
     padding: 0;
@@ -14,18 +15,20 @@
 
   &--wave {
     position: relative;
+    padding-bottom: 74px;
 
     &::after {
       content: "";
       display: block;
-      background-image: url("../../img/bg-zigzag-line.svg");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
       height: 6px;
       width: 100%;
       position: absolute;
+      /*left: -18px;*/
       left: 0;
-      bottom: -40px;
+      bottom: 30px;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-repeat: repeat;
+      background-size: 100% auto;
     }
   }
 }
@@ -42,7 +45,7 @@
     &--image {
       background-image: url("../../img/review@1x.jpg");
       background-repeat: no-repeat;
-      background-position: left bottom;
+      background-position: left bottom 153px;
       background-size: 350px auto;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -51,10 +54,11 @@
     }
 
     &--wave {
+      padding-bottom: 125px;
+
       &::after {
-        bottom: -75px;
         height: 15px;
-        width: 100%;
+        bottom: 60px;
       }
     }
   }
@@ -66,15 +70,16 @@
     padding: 0 50px;
 
     &--image {
-      background-position: 50px bottom;
+      background-position: left 50px bottom 164px;
     }
 
-    &--wave::after {
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: -90px;
-      height: 23px;
-      width: 1050px;
+    &--wave {
+      padding-bottom: 164px;
+
+      &::after {
+        height: 22px;
+        bottom: 80px;
+      }
     }
   }
 }
