@@ -92,6 +92,7 @@
 
   .week-product__label {
     width: 15%;
+    line-height: 17px;
     text-align: center;
   }
 
@@ -145,12 +146,13 @@
   .week-product {
     justify-content: flex-start;
     align-content: flex-end;
+    min-height: 636px;
+    box-sizing: border-box;
   }
 
   .week-product__title {
     justify-content: flex-start;
     z-index: 2;
-    padding-top: 55px;
   }
 
   .week-product__name {
@@ -160,21 +162,31 @@
 
   .week-product__label {
     width: 175px;
-    padding: 0 50px;
+    padding-left: 35px;
+    padding-right: 45px;
+    padding-top: 8px;
     box-sizing: border-box;
   }
 
   .week-product__wrapper {
     padding-left: 175px;
     padding-right: 58px;
+
+    &--button {
+      margin-top: 108px;
+    }
   }
 
   .week-product__properties {
-    margin-top: 51px;
+    margin-top: 48px;
+  }
+
+  .week-product__button {
+    margin-top: 33px;
   }
 
   .week-product__img {
-    margin-top: -117px;
     z-index: 1;
+    margin-top: -110px;
   }
 }

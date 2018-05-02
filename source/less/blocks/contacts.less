@@ -131,6 +131,7 @@
 
 @media (min-width: @desktop-width) {
   .contacts {
+    padding-top: 5px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -140,12 +141,14 @@
     padding-left: 175px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    background-position: 63px top;
+    justify-content: flex-start;
+    background-position: top 68px left 63px;
   }
 
   .contacts__title {
     .title-desktop();
+    margin-top: 75px;
+    margin-bottom: 48px;
   }
 
   .contacts__list tbody {
@@ -162,10 +165,14 @@
     bottom: 0;
     left: 0;
     transform: none;
-    margin-top: 77px;
+    margin-top: 35px;
   }
 
   .contacts__map {
     width: 525px;
+
+    &--img {
+      top: 0;
+    }
   }
 }
