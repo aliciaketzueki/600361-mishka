@@ -29,13 +29,13 @@
   &--interior {
     background-image: url("../../img/icon-interior.svg");
     background-repeat: no-repeat;
-    background-position: 245px center;
+    background-position: right 38px top 25px;
   }
 
   &--toys {
     background-image: url("../../img/icon-toy.svg");
     background-repeat: no-repeat;
-    background-position: 233px center;
+    background-position: right 27px top 23px;
   }
 
   &:active {
@@ -50,13 +50,22 @@
 
   .menu__item {
     flex-grow: 1;
+    min-height: 117px;
+    width: 50%;
   }
 
   .menu__link {
-    padding-left: 36px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 28px;
+    padding-left: 35px;
 
     &--interior {
-      background-position: 260px center;
+      background-position: right 38px top 30px;
+    }
+
+    &--toys {
+      background-position: right 33px top 30px;
     }
   }
 }
