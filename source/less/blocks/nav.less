@@ -18,7 +18,15 @@
 
 .nav__logo {
   flex-grow: 1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  .link();
+  .interactive();
+}
+
+.nav__logo-img {
+  fill: @black;
+  display: block;
 }
 
 .nav__button {
@@ -53,7 +61,7 @@
 .nav__item {
   border: 1px solid @border;
   border-bottom: 0;
-  min-height: 80px;
+  min-height: 77px;
   box-sizing: border-box;
 }
 
@@ -62,14 +70,37 @@
   .interactive();
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 76px;
   width: 100%;
-  min-height: 80px;
+  min-height: 77px;
+
+  &--search,
+  &--cart {
+    position: relative;
+
+    &:hover svg {
+      fill: @blue;
+      opacity: 1;
+    }
+
+    &:active svg {
+      fill: @blue;
+      opacity: 0.3;
+    }
+  } 
 }
 
 .nav__search {
   margin: 0;
-  .interactive(); /*или убрать?? */
+}
+
+.nav__svg {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.2;
 }
 
 .nav__delivery {
@@ -92,7 +123,9 @@
   .nav__logo-wrapper {
     order: 1;
     justify-content: flex-start;
+    
     border: 0;
+    padding: 0;
   }
 
   .nav__button {
@@ -140,6 +173,7 @@
 
   .nav__link {
     min-height: 100%;
+    padding-left: 0;
 
     &--search {
       width: 82px;
@@ -148,6 +182,18 @@
 
   .nav__search {
     display: none;
+  }
+
+  .nav__svg {
+    &--search {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--cart {
+      left: -50px;
+    }
   }
 
   .nav__delivery {
@@ -168,11 +214,14 @@
       order: 1;
       min-height: 88px;
       font-size: 17px;
+      width: 400px;
     }
 
     &--tools {
       order: 3;
       min-height: 88px;
+      width: 400px;
+      justify-content: flex-end;
     }
 
     &--hidden {
@@ -199,6 +248,11 @@
     }
   }
 
+  .nav__svg {
+    &--cart {
+      left: -52px;
+    }
+  }
   .nav__delivery {
     order: 5;
   }

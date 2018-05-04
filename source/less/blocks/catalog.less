@@ -74,12 +74,21 @@
 .catalog__button {
   border: 0;
   padding: 0;
-  background-color: rgba(255, 255, 255, 0);
-  background-image: url("../../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  width: 21px;
-  height: 20px;
-  opacity: 0.2;
+  width: 25px;
+  height: 25px;
+  background-color: @white;
+
+  &:hover svg {
+    fill: @blue;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+.catalog__button svg {
+  fill: #d3d2d2;
 }
 
 @media (min-width: @tablet-width) {

@@ -9,6 +9,10 @@
   .link();
   display: flex;
 
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -23,7 +27,5 @@
 }
 
 .copyright__logo {
-  &:hover {
-    fill: #46c1ae;
-  }
+  fill: @blue;
 }
