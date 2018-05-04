@@ -65,6 +65,42 @@
   &:active {
     border-bottom: 2px solid @blue;
   }
+
+  &::placeholder {
+    color: @grey;
+    opacity: 0.3;
+  }
+
+  &::-ms-input-placeholder {
+    color: @grey;
+    opacity: 0.3;
+  }
+
+  &:-ms-input-placeholder {
+    color: @grey;
+    opacity: 0.3;
+  }
+
+  &:focus{
+    &::placeholder {
+      color: @grey;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    &::-ms-input-placeholder {
+      color: @grey;
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    &:-ms-input-placeholder {
+      color: @grey;
+      opacity: 1;
+    }
+  }
 }
 
 .order-form__tag {
