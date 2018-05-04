@@ -87,7 +87,7 @@
                 </div>
                 <div class="catalog__cost-wrapper">
                   <p class="catalog__cost">1200 руб.</p>
-                  <button class="catalog__button" type="button" aria-label="Добавить в корзину">
+                  <button class="catalog__button cart" type="button" aria-label="Добавить в корзину">
                     <svg width="20.294px" height="18.849px">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="catalog__cost-wrapper">
                   <p class="catalog__cost">690 руб.</p>
-                  <button class="catalog__button" type="button" aria-label="Добавить в корзину">
+                  <button class="catalog__button cart" type="button" aria-label="Добавить в корзину">
                     <svg width="20.294px" height="18.849px">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -137,7 +137,7 @@
                 </div>
                 <div class="catalog__cost-wrapper">
                   <p class="catalog__cost">1500 руб.</p>
-                  <button class="catalog__button" type="button" aria-label="Добавить в корзину">
+                  <button class="catalog__button cart" type="button" aria-label="Добавить в корзину">
                     <svg width="20.294px" height="18.849px">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -146,6 +146,29 @@
               </div>
             </li>
           </ul>
+          <section class="modal">
+            <h2 class="modal__title">Добавить в корзину</h2>
+            <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="modal__form-field">
+                <legend class="modal__legend">Выберите размер:</legend>
+                <ul class="modal__list">
+                  <li class="modal__item">
+                    <input class="modal__input" type="radio" name="size" id="first-size" value="S-size" checked>
+                    <label class="modal__label" for="first-size">S</label>
+                  </li>
+                  <li class="modal__item">
+                    <input class="modal__input" type="radio" name="size" id="second-size" value="M-size">
+                    <label class="modal__label" for="second-size">M</label>
+                  </li>
+                  <li class="modal__item">
+                    <input class="modal__input" type="radio" name="size" id="third-size" value="L-size">
+                    <label class="modal__label" for="third-size">L</label>
+                  </li>
+                </ul>
+                <button class="button modal__button" type="submit">Добавить</button>
+              </fieldset>
+            </form>
+          </section>
         </section>
         <section class="main__making making">
           <div class="making__wrapper-title">
@@ -217,30 +240,6 @@
         </div>
       </div>
     </footer>
-
-    <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="modal__form-field">
-          <legend class="modal__legend">Выберите размер:</legend>
-          <ul class="modal__list">
-            <li class="modal__item">
-              <input class="modal__input" type="radio" name="size" id="first-size" value="S-size" checked>
-              <label class="modal__label" for="first-size">S</label>
-            </li>
-            <li class="modal__item">
-              <input class="modal__input" type="radio" name="size" id="second-size" value="M-size">
-              <label class="modal__label" for="second-size">M</label>
-            </li>
-            <li class="modal__item">
-              <input class="modal__input" type="radio" name="size" id="third-size" value="L-size">
-              <label class="modal__label" for="third-size">L</label>
-            </li>
-          </ul>
-          <button class="button modal__button" type="submit">Добавить</button>
-        </fieldset>
-      </form>
-    </section>
 
     <script src="js/scripts.js"></script>
   </body>

@@ -106,8 +106,33 @@
           </picture>
           <div class="week-product__wrapper week-product__wrapper--button">
             <p class="week-product__cost">Цена: 990 руб.</p>
-            <button class="button week-product__button" type="button">Заказать</button>
+            <button class="button week-product__button cart" type="button">Заказать</button>
           </div>
+
+          <section class="modal">
+            <h2 class="modal__title">Добавить в корзину</h2>
+            <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="modal__form-field">
+                <legend class="modal__legend">Выберите размер:</legend>
+                <ul class="modal__list">
+                  <li class="modal__item">
+                    <input class="modal__input" type="radio" name="size" id="first-size" value="S-size" checked>
+                    <label class="modal__label" for="first-size">S</label>
+                  </li>
+                  <li class="modal__item">
+                    <input class="modal__input" type="radio" name="size" id="second-size" value="M-size">
+                    <label class="modal__label" for="second-size">M</label>
+                  </li>
+                  <li class="modal__item">
+                    <input class="modal__input" type="radio" name="size" id="third-size" value="L-size">
+                    <label class="modal__label" for="third-size">L</label>
+                  </li>
+                </ul>
+                <button class="button modal__button" type="submit">Добавить</button>
+              </fieldset>
+            </form>
+          </section>
+
         </section>
       </div>
       <div class="main-wrapper main-wrapper--image main-wrapper--wave">
@@ -235,30 +260,6 @@
         </div>
       </div>
     </footer>
-
-    <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="modal__form-field">
-          <legend class="modal__legend">Выберите размер:</legend>
-          <ul class="modal__list">
-            <li class="modal__item">
-              <input class="modal__input" type="radio" name="size" id="first-size" value="S-size" checked>
-              <label class="modal__label" for="first-size">S</label>
-            </li>
-            <li class="modal__item">
-              <input class="modal__input" type="radio" name="size" id="second-size" value="M-size">
-              <label class="modal__label" for="second-size">M</label>
-            </li>
-            <li class="modal__item">
-              <input class="modal__input" type="radio" name="size" id="third-size" value="L-size">
-              <label class="modal__label" for="third-size">L</label>
-            </li>
-          </ul>
-          <button class="button modal__button" type="submit">Добавить</button>
-        </fieldset>
-      </form>
-    </section>
 
     <script src="js/scripts.js"></script>
   </body>
