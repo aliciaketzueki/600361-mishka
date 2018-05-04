@@ -6,10 +6,24 @@
   margin-bottom: 5px;
 }
 
-.tel__input {
-	background-image: url("../../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: right 8px center;
+.tel__wrapper {
+  position: relative;
+
+  &:hover svg {
+    fill: #62d1ba;
+  }
+
+  &:active svg {
+    fill: #62d1ba;
+  }
+}
+
+.tel__wrapper svg {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  fill: #cccccc;
 }
 
 @media (min-width: @tablet-width) {
@@ -18,16 +32,25 @@
     margin-bottom: 15px;
 	}
 	
-	.tel__input {
-    background-color: @light-grey;
+	.tel__wrapper {
     width: 75%;
-    background-position: right 26px center;
+  }
+
+  .tel__wrapper svg {
+    right: 26px;
+  }
+
+  .tel__input {
+    background-color: @light-grey;
   }
 }
 
 @media (min-width: @desktop-width) {
 	.tel__input {
     flex-grow: 1;
-    background-position: right 8px center;
+  }
+
+  .tel__wrapper svg {
+    right: 8px;
   }
 }
