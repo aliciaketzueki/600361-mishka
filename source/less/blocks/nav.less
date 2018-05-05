@@ -36,13 +36,13 @@
   padding: 0;
   width: 26px;
   height: 26px;
-  background-image: url("../../img/icon-menu-open.svg");
+  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .nav__button--opened {
-  background-image: url("../../img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-close.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -72,6 +72,7 @@
   justify-content: flex-start;
   padding-left: 76px;
   width: 100%;
+  box-sizing: border-box;
   min-height: 77px;
 
   &--search,
@@ -93,7 +94,7 @@
   margin: 0;
 }
 
-.nav__svg {
+.nav__link svg {
   position: absolute;
   left: 30px;
   top: 50%;
