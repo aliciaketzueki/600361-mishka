@@ -1,0 +1,51 @@
+.email__legend {
+  margin-bottom: 5px;
+}
+
+.email__wrapper {
+  position: relative;
+
+  &:hover svg {
+    fill: #62d1ba;
+  }
+
+  &:active svg {
+    fill: #62d1ba;
+  }
+}
+
+.email__wrapper svg {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  fill: #cccccc;
+}
+
+@media (min-width: @tablet-width) {
+  .email {
+    margin-top: 0;
+  }
+
+  .email__wrapper {
+    width: 75%;
+  }
+
+  .email__wrapper svg {
+    right: 22px;
+  }
+
+  .email__input {
+    background-color: @light-grey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .email__input {
+    flex-grow: 1;
+  }
+
+  .email__wrapper svg {
+    right: 4px;
+  }
+}

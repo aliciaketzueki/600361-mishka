@@ -1,0 +1,81 @@
+.color__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.color__label {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border: 2px solid @grey;
+    margin-right: 24px;
+  }
+}
+
+.color__checkbox:hover + .color__label::before {
+  border: 2px solid #62d1ba;
+}
+
+.color__checkbox:active + .color__label::before {
+  border: 2px solid #c7c7c7;
+}
+
+.color__checkbox:checked + .color__label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .color {
+    margin-top: 26px;
+  }
+
+  .color__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+
+  .color__item {
+    width: 40%;
+    margin-top: 24px;
+    padding-right: 38px;
+  }
+
+  .color__label {
+    &::before {
+      width: 50px;
+      height: 48px;
+      margin-right: 26px;
+    }
+  }
+
+  .color__checkbox:checked + .color__label::before {
+    background-size: 33px 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .color {
+    margin-right: 0;
+  }
+
+  .color__list {
+    width: 875px;
+    justify-content: flex-start;
+  }
+
+  .color__item {
+    width: 30%;
+    padding: 0;
+  }
+}

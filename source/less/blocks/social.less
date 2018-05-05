@@ -15,22 +15,22 @@
 
 .social__link {
   .link();
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
-  height: 30px;
-  margin: 0 14px;
+  height: 50px;
+  margin: 0 12px;
 
-  &--instagram {
-    background-image: url("../../img/icon-insta.svg");
+  &:hover svg {
+    fill: #66cabb;
   }
 
-  &--facebook {
-    background-image: url("../../img/icon-fb.svg");
+  &:active svg {
+    opacity: 0.3;
   }
+}
 
-  &--twitter {
-    background-image: url("../../img/icon-twitter.svg");
-  }
+.social__link svg {
+  fill: #2f2c2c;
 }

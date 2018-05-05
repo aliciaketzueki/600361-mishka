@@ -8,7 +8,10 @@
 .copyright__link {
   .link();
   display: flex;
-  align-items: center;
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
 
   &:active {
     opacity: 0.3;
@@ -19,11 +22,10 @@
   font-size: 19px;
   line-height: 18px;
   margin: 0;
+  margin-top: 6px;
   padding-right: 30px;
 }
 
 .copyright__logo {
-  &:hover {
-    fill: #46c1ae;
-  }
+  fill: @blue;
 }

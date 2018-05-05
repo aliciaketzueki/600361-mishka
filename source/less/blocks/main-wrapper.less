@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 0 30px;
   box-sizing: border-box;
-  outline: 2px solid red;
+  /*outline: 2px solid red;*/
 
   &--header {
     padding: 0;
@@ -11,6 +11,23 @@
 
   &--contacts {
     padding: 0;
+  }
+
+  &--wave {
+    position: relative;
+    padding-bottom: 70px;
+
+    &::after {
+      content: "";
+      height: 6px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 30px;
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: repeat;
+      background-size: auto 6px;
+    }
   }
 }
 
@@ -24,9 +41,24 @@
     }
 
     &--image {
-      background-image: url("../../img/review@1x.jpg");
+      background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
-      background-position: left bottom;
+      background-position: left bottom 135px;
+      background-size: 350px auto;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/review@2x.jpg");
+      }
+    }
+
+    &--wave {
+      padding-bottom: 115px;
+
+      &::after {
+        height: 15px;
+        background-size: auto 15px;
+        bottom: 50px;
+      }
     }
   }
 }
@@ -37,21 +69,17 @@
     padding: 0 50px;
 
     &--image {
-      background-position: 50px bottom;
+      background-position: left 50px bottom 150px;
     }
 
-    &--wave::after {
-      content: "";
-      display: block;
-      background-image: url("../../img/zigzag-line-desktop.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: -90px;
-      background-size: 1050px 23px;
-      height: 23px;
-      width: 1050px;
+    &--wave {
+      padding-bottom: 155px;
+
+      &::after {
+        height: 22px;
+        background-size: auto 22px;
+        bottom: 60px;
+      }
     }
   }
 }

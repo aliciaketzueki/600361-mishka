@@ -1,0 +1,52 @@
+.tel__legend {
+  margin-bottom: 5px;
+}
+
+.tel__wrapper {
+  position: relative;
+
+  &:hover svg {
+    fill: #62d1ba;
+  }
+
+  &:active svg {
+    fill: #62d1ba;
+  }
+}
+
+.tel__wrapper svg {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  fill: #cccccc;
+}
+
+@media (min-width: @tablet-width) {
+  .tel {
+    margin-top: 45px;
+    margin-bottom: 15px;
+  }
+
+  .tel__wrapper {
+    width: 75%;
+  }
+
+  .tel__wrapper svg {
+    right: 26px;
+  }
+
+  .tel__input {
+    background-color: @light-grey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tel__input {
+    flex-grow: 1;
+  }
+
+  .tel__wrapper svg {
+    right: 8px;
+  }
+}
