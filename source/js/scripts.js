@@ -8,18 +8,32 @@ var modal = document.querySelector(".modal");
 var add = document.querySelector(".modal__button");
 
 button1.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup1.classList.toggle("nav__list--show");
-    popup2.classList.toggle("nav__list--show");
-    button2.classList.toggle("nav__button--opened");
+  evt.preventDefault();
+  popup1.classList.toggle("nav__list--show");
+  popup2.classList.toggle("nav__list--show");
+  button2.classList.toggle("nav__button--opened");
 });
 
 cart.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    modal.classList.add("modal-show");
+  evt.preventDefault();
+  modal.classList.add("modal-show");
 });
 
 add.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    modal.classList.remove("modal-show");
+  evt.preventDefault();
+  modal.classList.remove("modal-show");
 });
+
+function initMap() {
+  var uluru = { lat: 59.9387942, lng: 30.323083300000008 };
+  var map = new google.maps.Map(document.querySelector(".contacts__map--img"), {
+      zoom: 16,
+      center: uluru
+  });
+  var image = '../img/icon-map-pin.svg';
+  var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+      icon: image
+  });
+}
