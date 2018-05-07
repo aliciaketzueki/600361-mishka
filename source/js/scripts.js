@@ -33,10 +33,10 @@ add.addEventListener("click", function (evt) {
 function initMap() {
   var uluru = { lat: 59.9387942, lng: 30.323083300000008 };
   var map = new google.maps.Map(document.querySelector(".contacts__map--img"), {
-      zoom: 16,
+      zoom: 17,
       center: uluru
   });
-  var image = "../img/icon-map-pin.svg";
+  var image = "img/icon-map-pin.svg";
   var marker = new google.maps.Marker({
       position: uluru,
       map: map,
