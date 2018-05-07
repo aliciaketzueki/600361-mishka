@@ -18,6 +18,10 @@
   &--toys {
     background-color: #56c3b2;
   }
+
+  &:hover {
+    min-height: 108px;
+  }
 }
 
 .menu__link {
@@ -53,8 +57,12 @@
 
   .menu__item {
     flex-grow: 1;
-    min-height: 117px;
+    min-height: 122px;
     width: 50%;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 
   .menu__link {
