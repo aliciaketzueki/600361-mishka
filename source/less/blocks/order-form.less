@@ -62,23 +62,24 @@
   box-sizing: border-box;
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     border-bottom: 2px solid @blue;
   }
 
   &::placeholder {
-    color: @grey;
-    opacity: 0.3;
+    color: rgba(68, 68, 68, 0.3);
+    opacity: 1;
   }
 
   &::-ms-input-placeholder {
-    color: @grey;
-    opacity: 0.3;
+    color: rgba(68, 68, 68, 0.3);
+    opacity: 1;
   }
 
   &:-ms-input-placeholder {
-    color: @grey;
-    opacity: 0.3;
+    color: rgba(68, 68, 68, 0.3);
+    opacity: 1;
   }
 
   &:focus {
