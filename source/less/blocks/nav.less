@@ -31,6 +31,8 @@
 .nav__button {
   position: absolute;
   right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: @white;
   border: 0;
   padding: 0;
@@ -73,7 +75,8 @@
   padding-left: 76px;
   width: 100%;
   box-sizing: border-box;
-  min-height: 77px;
+  padding-top: 27px;
+  padding-bottom: 27px;
 
   &--search,
   &--cart {
@@ -166,15 +169,24 @@
   }
 
   .nav__link {
-    min-height: 100%;
-    padding-left: 0;
+    padding: 0;
 
     &--search {
       width: 82px;
+      padding-top: 57px;
+      padding-bottom: 30px;
     }
 
     &--cart {
       padding-left: 83px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    &--catalog,
+    &--order {
+      padding-top: 18px;
+      padding-bottom: 18px;
     }
   }
 
@@ -246,6 +258,30 @@
     }
   }
 
+  .nav__link {
+    &--search {
+      padding-top: 57px;
+      padding-bottom: 30px;
+    }
+
+    &--cart {
+      padding-left: 83px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    &--catalog,
+    &--order {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    &--new,
+    &--sale {
+      padding-top: 20px;
+      padding-bottom: 18px;
+    }
+  }
   .nav__delivery {
     order: 5;
   }
