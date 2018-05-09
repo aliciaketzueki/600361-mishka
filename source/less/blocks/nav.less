@@ -51,12 +51,18 @@
 
 .nav__list {
   .list();
-  display: none;
-}
 
-.nav__list--show {
-  display: block;
-  .list();
+  &--show {
+    display: block;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &--current {
+    display: none;
+  }
 }
 
 .nav__item {
@@ -150,9 +156,13 @@
       line-height: 24px;
     }
 
-    &--hidden {
+    &--current {
       display: none;
       font-size: 15px;
+    }
+
+    &--hidden {
+      display: flex;
     }
   }
 
@@ -236,7 +246,7 @@
       justify-content: flex-end;
     }
 
-    &--hidden {
+    &--current {
       display: flex;
       order: 4;
       min-height: 60px;
