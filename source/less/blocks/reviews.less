@@ -48,6 +48,7 @@
   margin-top: 38px;
   margin-bottom: 10px;
   padding: 14px 0;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
@@ -77,16 +78,28 @@
     margin-top: 58px;
   }
 
+  .reviews__who {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   .reviews__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
+  .reviews__toggles {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
   .reviews__button {
     order: 2;
     margin: 0;
     width: 173px;
+    font-size: 17px;
+    margin-top: 2px;
   }
 }
 
@@ -106,5 +119,14 @@
 
   .reviews__reviewer {
     margin-top: 38px;
+  }
+
+  .reviews__who {
+    font-size: 17px;
+  }
+
+  .reviews__button {
+    margin-top: 7px;
+    width: 175px;
   }
 }
