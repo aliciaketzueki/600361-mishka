@@ -2,11 +2,18 @@ var button1 = document.querySelector(".nav__button");
 var popup1 = document.querySelector(".nav__list--nav");
 var popup2 = document.querySelector(".nav__list--tools");
 var button2 = document.querySelector(".nav__button--closed");
+var nojs = document.querySelectorAll(".nav__list--show");
+
+document.addEventListener("DOMContentLoaded", function () {
+  for (var i = 0; i < nojs.length; i++) {
+    nojs[i].classList.add("js"); 
+  }
+});
 
 button1.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup1.classList.toggle("nav__list--show");
-  popup2.classList.toggle("nav__list--show");
+  popup1.classList.toggle("js");
+  popup2.classList.toggle("js");
   button2.classList.toggle("nav__button--opened");
 });
 
