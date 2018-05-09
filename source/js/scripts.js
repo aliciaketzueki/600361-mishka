@@ -3,7 +3,6 @@ var nojs = document.querySelectorAll(".nav__list--show");
 var button1 = document.querySelector(".nav__button");
 var button2 = document.querySelector(".nav__button--closed");
 
-
 document.addEventListener("DOMContentLoaded", function () {
   for (var i = 0; i < nojs.length; i++) {
     nojs[i].classList.add("nav__list--hidden"); 
