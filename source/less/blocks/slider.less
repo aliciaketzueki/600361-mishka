@@ -1,4 +1,4 @@
-.slider__toggles {
+.slider {
   border: 1px solid @border;
   width: 100%;
   display: flex;
@@ -34,14 +34,14 @@
 .slider__toggle svg {
   position: absolute;
   top: 50%;
-  left: 38px;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: @tablet-width) {
-  .slider__toggles {
+  .slider {
     border: 0;
-    width: 167px;
+    width: 173px;
   }
 
   .slider__toggle {
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .slider__toggles {
+  .slider {
     width: 175px;
   }
 }

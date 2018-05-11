@@ -10,9 +10,9 @@
   <body>
     <div class="modal__overlay"></div>
     <header class="header">
-      <nav class="header__navigation header__navigation--inner nav">
+      <nav class="header__navigation nav">
         <div class="nav__logo-wrapper">
-          <a class="logo nav__logo" href="index.html">
+          <a class="nav__logo" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -23,15 +23,15 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <ul class="nav__list nav__list--nav">
+        <ul class="nav__list nav__list--nav nav__list--show">
           <li class="nav__item nav__item--catalog">
-            <a class="nav__link">Каталог товаров</a>
+            <a class="nav__link nav__link--catalog">Каталог товаров</a>
           </li>
           <li class="nav__item nav__item--order">
-            <a class="nav__link" href="form.html">Вязание на заказ</a>
+            <a class="nav__link nav__link--order" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="nav__list nav__list--tools">
+        <ul class="nav__list nav__list--tools nav__list--show">
           <li class="nav__item nav__item--search">
             <a class="nav__link nav__link--search" href="#">
               <svg width="17.6" height="17.6">
@@ -49,7 +49,7 @@
             </a>
           </li>
         </ul>
-        <ul class="nav__list nav__list--hidden">
+        <ul class="nav__list nav__list--current">
           <li class="nav__item nav__item--new">
             <a class="nav__link nav__link--new" href="#">Новые поступления</a>
           </li>
@@ -255,5 +255,7 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/svgxuse.js" defer></script>
+    <script src="js/picturefill.js" defer></script>
   </body>
 </html>

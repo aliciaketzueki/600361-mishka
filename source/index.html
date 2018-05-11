@@ -23,7 +23,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <ul class="nav__list nav__list--nav">
+        <ul class="nav__list nav__list--nav nav__list--show">
           <li class="nav__item nav__item--catalog">
             <a class="nav__link nav__link--catalog" href="catalog.html">Каталог товаров</a>
           </li>
@@ -31,7 +31,7 @@
             <a class="nav__link nav__link--order" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="nav__list nav__list--tools">
+        <ul class="nav__list nav__list--tools nav__list--show">
           <li class="nav__item nav__item--search">
             <a class="nav__link nav__link--search" href="#">
               <svg width="17.6" height="17.6">
@@ -49,7 +49,7 @@
             </a>
           </li>
         </ul>
-        <ul class="nav__list nav__list--hidden">
+        <ul class="nav__list nav__list--current">
           <li class="nav__item nav__item--new">
             <a class="nav__link nav__link--new" href="#">Новые поступления</a>
           </li>
@@ -170,14 +170,14 @@
         </section>
         <section class="main__reviews reviews">
           <h1 class="reviews__title">Отзывы</h1>
-          <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
+          <ul class="reviews__list">
+            <li class="reviews__item">
               <p class="reviews__review">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <div class="reviews__reviewer">
                 <p class="reviews__who">Анастасия Красильникова</p>
                 <p class="reviews__contact">@misssssiskras</p>
               </div>
-              <div class="reviews__toggles slider__toggles">
+              <div class="reviews__toggles slider">
                 <button class="slider__toggle slider__toggle--left" type="button">
                   <svg width="50" height="26.003">
                     <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
@@ -220,6 +220,7 @@
               <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
             </picture>
             <div class="contacts__map contacts__map--img"></div>
+            <img class="contacts__map-marker" src="img/icon-map-pin.svg" width="66" height="100.801">
           </div>
         </section>
       </div>
@@ -275,5 +276,7 @@
     <script src="js/scripts.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAFpk8cXb_9F7bdJnh3YFeoJW1VQr8f6U&callback=initMap">
     </script>
+    <script src="js/svgxuse.js" defer></script>
+    <script src="js/picturefill.js" defer></script>
   </body>
 </html>

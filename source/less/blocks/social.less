@@ -3,14 +3,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &::after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
+  }
 }
 
 .social__list {
   .list();
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .social__item {
-  display: inline-block;
+  width: 60px;
 }
 
 .social__link {
@@ -18,9 +28,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 50px;
-  margin: 0 12px;
+  height: 100%;
+  padding: 15px 0;
+
+  &--instagram {
+    margin-right: 5px;
+  }
+
+  &--facebook {
+    margin-right: 2px;
+  }
+
+  &--twitter {
+    margin-right: 5px;
+  }
 
   &:hover svg {
     fill: #66cabb;

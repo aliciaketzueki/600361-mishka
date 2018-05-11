@@ -76,6 +76,12 @@
   }
 }
 
+.contacts__map-marker {
+  position: absolute;
+  top: 145px;
+  left: 138px;
+}
+
 .contacts__button {
   .link();
   .main-button();
@@ -91,6 +97,7 @@
 @media (min-width: @tablet-width) {
   .contacts__wrapper {
     padding: 0 50px;
+    padding-top: 15px;
     background-image: url("../img/icon-flag.svg");
     background-size: 47px 81px;
     background-repeat: no-repeat;
@@ -99,8 +106,8 @@
 
   .contacts__title {
     .title-tablet();
-    margin-top: 13px;
     margin-bottom: 48px;
+    margin-top: 0;
   }
 
   .contacts__list tbody {
@@ -121,6 +128,11 @@
 
   .contacts__map-wrapper {
     margin-top: 5px;
+  }
+
+  .contacts__map-marker {
+    top: 139px;
+    left: 363px;
   }
 
   .contacts__button {
@@ -149,7 +161,7 @@
 
   .contacts__title {
     .title-desktop();
-    margin-top: 75px;
+    margin-top: 62px;
     margin-bottom: 48px;
   }
 
@@ -176,5 +188,10 @@
     &--img {
       top: 0;
     }
+  }
+
+  .contacts__map-marker {
+    top: 146px;
+    left: 239px;
   }
 }
