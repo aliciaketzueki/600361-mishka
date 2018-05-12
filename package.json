@@ -17,7 +17,10 @@
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.2",
     "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
     "gulp-webp": "^3.0.0",
+    "node-normalize-scss": "^8.0.0",
+    "normalize.less": "^1.0.0",
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
@@ -49,6 +52,9 @@
   "dependencies": {
     "cwebp": "^2.0.2",
     "del": "^3.0.0",
-    "npm": "^6.0.0"
+    "gulp-htmlmin": "^4.0.0",
+    "normalize.css": "^8.0.0",
+    "npm": "^6.0.0",
+    "pump": "^3.0.0"
   }
 }
