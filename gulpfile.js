@@ -91,9 +91,9 @@ gulp.task("compress", function (cb) {
     gulp.src("source/js/scripts.js"),
     uglify(),
     rename({
-      suffix: '.min'
+      suffix: ".min"
     }),
-    gulp.dest("build/js")
+    gulp.dest("source/js")
   ],
     cb
   );
@@ -115,5 +115,5 @@ gulp.task("clean", function() {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "compress", "sprite", "html", "minify", done);
+  run("clean", "copy", "style", "sprite", "html", "minify", done);
 });
