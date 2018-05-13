@@ -18,6 +18,8 @@ var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
 var pump = require("pump");
+var sourcemaps = require("gulp-sourcemaps");
+var concat = require("gulp-concat");
 
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
@@ -98,11 +100,19 @@ gulp.task("compress", function (cb) {
   );
 });
 
+gulp.task("js", function () {
+  return gulp.src("source/js/**/*.min.js", { base: "src/js" })
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(concat("main.min.js"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("source/js"));
+});
+
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**/*.min.js"
+    "source/js/main.min.js"
   ], {
     base: "source"
   })
