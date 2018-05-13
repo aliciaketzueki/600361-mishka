@@ -5,7 +5,7 @@ var button2 = document.querySelector(".nav__button--closed");
 
 document.addEventListener("DOMContentLoaded", function () {
   for (var i = 0; i < nojs.length; i++) {
-    nojs[i].classList.add("nav__list--hidden"); 
+    nojs[i].classList.add("nav__list--hidden");
   }
 });
 
