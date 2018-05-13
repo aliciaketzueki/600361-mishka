@@ -23,19 +23,20 @@ var modal = document.querySelector(".modal");
 var add = document.querySelector(".modal__button");
 var overlay = document.querySelector(".modal__overlay");
 
-for (var i = 0; i < cart.length; i++) {
-  cart[i].addEventListener("click", function (evt) {
+if (modal) {
+  for (var i = 0; i < cart.length; i++) {
+    cart[i].addEventListener("click", function (evt) {
+      evt.preventDefault();
+      modal.classList.add("modal-show");
+      overlay.classList.add("modal__overlay-show");
+    });
+  }
+  add.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modal.classList.add("modal-show");
-    overlay.classList.add("modal__overlay-show");
+    modal.classList.remove("modal-show");
+    overlay.classList.remove("modal__overlay-show");
   });
 }
-add.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modal.classList.remove("modal-show");
-  overlay.classList.remove("modal__overlay-show");
-});
-
 
 function initMap() {
   var uluru = { lat: 59.9387942, lng: 30.323083300000008 };

@@ -112,7 +112,8 @@ gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/main.min.js"
+    "source/js/**/*.min.js",
+    "source/js/main.min.js.map"
   ], {
     base: "source"
   })
