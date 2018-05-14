@@ -21,20 +21,20 @@ button1.addEventListener("click", function (evt) {
 var cart = document.querySelectorAll(".cart");
 var modal = document.querySelector(".modal");
 var add = document.querySelector(".modal__button");
-var overlay = document.querySelector(".modal__overlay");
+var overlay = document.querySelector(".overlay");
 
 if (modal) {
   for (var i = 0; i < cart.length; i++) {
     cart[i].addEventListener("click", function (evt) {
       evt.preventDefault();
-      modal.classList.add("modal-show");
-      overlay.classList.add("modal__overlay-show");
+      modal.classList.add("modal--show");
+      overlay.classList.add("overlay--show");
     });
   }
   add.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modal.classList.remove("modal-show");
-    overlay.classList.remove("modal__overlay-show");
+    modal.classList.remove("modal--show");
+    overlay.classList.remove("overlay--show");
   });
 }
 
