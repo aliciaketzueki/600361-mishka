@@ -35,7 +35,7 @@
 
   &::after {
     content: "";
-    display: none;
+    visibility: hidden;
     position: absolute;
     left: 11.5px;
     top: 13.5px;
@@ -56,8 +56,7 @@
 }
 
 .radio__input:checked + .radio__label::after {
-  content: "";
-  display: block;
+  visibility: visible;
 }
 
 @media (min-width: @tablet-width) {

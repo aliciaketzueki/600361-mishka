@@ -4,14 +4,6 @@
 
 .tel__wrapper {
   position: relative;
-
-  &:hover svg {
-    fill: #62d1ba;
-  }
-
-  &:active svg {
-    fill: #62d1ba;
-  }
 }
 
 .tel__wrapper svg {
@@ -19,6 +11,15 @@
   right: 8px;
   bottom: 15px;
   fill: #cccccc;
+}
+
+.tel__input:hover + svg {
+  fill: #62d1ba;
+}
+
+.tel__input:active + svg,
+.tel__input:focus + svg {
+  fill: #62d1ba;
 }
 
 @media (min-width: @tablet-width) {

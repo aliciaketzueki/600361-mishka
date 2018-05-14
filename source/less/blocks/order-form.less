@@ -62,8 +62,12 @@
   box-sizing: border-box;
 
   &:hover,
-  &:active,
+  &:active {
+    border-bottom: 2px solid @blue;
+  }
+
   &:focus {
+    outline: 0;
     border-bottom: 2px solid @blue;
   }
 

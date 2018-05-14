@@ -4,14 +4,6 @@
 
 .email__wrapper {
   position: relative;
-
-  &:hover svg {
-    fill: #62d1ba;
-  }
-
-  &:active svg {
-    fill: #62d1ba;
-  }
 }
 
 .email__wrapper svg {
@@ -21,6 +13,15 @@
   margin: auto;
   right: 4px;
   fill: #cccccc;
+}
+
+.email__input:hover + svg {
+  fill: #62d1ba;
+}
+
+.email__input:active + svg,
+.email__input:focus + svg {
+  fill: #62d1ba;
 }
 
 @media (min-width: @tablet-width) {
