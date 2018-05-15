@@ -56,11 +56,6 @@
     border-bottom: 2px solid @blue;
   }
 
-  &:focus {
-    outline: 0;
-    border-bottom: 2px solid @blue;
-  }
-
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);
     opacity: 1;
@@ -77,6 +72,9 @@
   }
 
   &:focus {
+    outline: 0;
+    border-bottom: 2px solid @blue;
+
     &::placeholder {
       color: @grey;
       opacity: 1;
