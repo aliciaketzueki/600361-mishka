@@ -100,12 +100,12 @@ gulp.task("compress", function (cb) {
   );
 });
 
-gulp.task("js", function () {
+gulp.task("js", ["compress"], function () {
   return gulp.src("source/js/**/*.min.js", { base: "src/js" })
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(concat("main.min.js"))
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("source/js"));
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function() {
@@ -124,5 +124,5 @@ gulp.task("clean", function() {
 });
 
 gulp.task("build", function (done) {
-  run("clean", "copy", "style", "images", "sprite", "html", done);
+  run("clean", "copy", "style", "images", "js", "sprite", "html", done);
 });
