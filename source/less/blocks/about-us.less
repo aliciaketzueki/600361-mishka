@@ -11,7 +11,7 @@
   line-height: 20px;
   width: 100%;
   position: relative;
-  padding-top: 83px;
+  padding-top: 85px;
 
   &::before {
     content: "";
@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     background-position: left center;
     position: absolute;
-    min-height: 83px;
+    min-height: 85px;
     top: 0;
     left: -30px;
     width: 100%;
@@ -27,7 +27,7 @@
 
   &--ecology::before {
     background-image: url("../img/icon-feature-flower.svg");
-    background-position: left 38px top 28px;
+    background-position: left 38px top 30px;
     background-size: 32px 38px;
   }
 
@@ -37,16 +37,24 @@
     background-size: 47px 28px;
   }
 
-  &--likes::before {
-    background-image: url("../img/icon-feature-heart.svg");
-    background-position: left 37px top 35px;
-    background-size: 33px 28px;
+  &--likes {
+    padding-top: 82px;
+
+    &::before {
+      background-image: url("../img/icon-feature-heart.svg");
+      background-position: left 37px top 34px;
+      background-size: 33px 28px;
+    }
   }
 
-  &--handmade::before {
-    background-image: url("../img/icon-feature-ball.svg");
-    background-position: left 33px top 33px;
-    background-size: 35px 35px;
+  &--handmade {
+    padding-top: 82px;
+
+    &::before {
+      background-image: url("../img/icon-feature-ball.svg");
+      background-position: left 33px top 30px;
+      background-size: 35px 35px;
+    }
   }
 
   &--domestic::before {
@@ -55,10 +63,14 @@
     background-size: 54px 23px;
   }
 
-  &--gift::before {
-    background-image: url("../img/icon-feature-gift.svg");
-    background-position: left 33px top 33px;
-    background-size: 33px 33px;
+  &--gift {
+    padding-top: 82px;
+
+    &::before {
+      background-image: url("../img/icon-feature-gift.svg");
+      background-position: left 33px top 33px;
+      background-size: 33px 33px;
+    }
   }
 }
 
@@ -77,7 +89,7 @@
     width: 50%;
     font-size: 20px;
     line-height: 22px;
-    padding-top: 110px;
+    padding-top: 103px;
 
     &::before {
       min-height: 110px;
@@ -86,16 +98,16 @@
 
     &--ecology {
       order: 1;
-      padding-top: 105px;
 
       &::before {
-        background-position: left 58px top 50px;
+        background-position: left 58px top 48px;
         min-height: 105px;
       }
     }
 
     &--style {
       order: 3;
+      padding-top: 110px;
 
       &::before {
         background-position: left 50px top 57px;
@@ -104,18 +116,18 @@
 
     &--likes {
       order: 5;
+      padding-top: 110px;
 
       &::before {
-        background-position: left 60px top 65px;
+        background-position: left 60px top 63px;
       }
     }
 
     &--handmade {
       order: 2;
-      padding-top: 105px;
 
       &::before {
-        background-position: left 53px top 54px;
+        background-position: left 53px top 50px;
         min-height: 105px;
       }
     }
@@ -124,7 +136,7 @@
       order: 4;
 
       &::before {
-        background-position: left 44px top 60px;
+        background-position: left 44px top 52px;
       }
     }
 
@@ -132,7 +144,7 @@
       order: 6;
 
       &::before {
-        background-position: left 53px top 60px;
+        background-position: left 53px top 52px;
       }
     }
   }
